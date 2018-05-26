@@ -1,0 +1,117 @@
+
+div[class$=inner] {
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flex;
+  display: -o-flex;
+  display: flex;
+  // @media (min-width: 1260px) {
+    width: 1440px;
+    margin: 0 auto;
+  // }  
+}
+
+// header
+
+header {
+  // @media (min-width: 1260px) {
+    font-size: 22px;
+    padding: 47px 0;
+  // }
+  .head__inner {
+    justify-content: space-between;
+  }
+}
+
+
+.main-nav {
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flex;
+  display: -o-flex;
+  display: flex;
+  list-style-type: none;
+  margin: 0;
+
+  // @media (min-width: 1260px) {
+    justify-content: space-between;
+    width: 618px;
+
+  // }
+}
+
+.description {
+  background-image: url(../img/description-back.png);
+  // padding: 280px 0 50px 0;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  &__block {
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: flex;
+    width: 850px;
+    background-color: #40a500;
+    padding: 60px 125px 60px 180px;
+    justify-content: space-between;
+    margin-left: -152px;
+    position: relative;
+    bottom: -50px;
+    margin-top: 300px;
+  }
+  &__text {
+    width: 506px;
+    color: #fff;
+    font-size: 22px;
+    line-height: 1.3;
+  }
+}
+
+.parks {
+  padding-top: 80px;
+  &__title-block {
+    background-image: url(../img/parks.png);
+    background-repeat: no-repeat;
+    position: relative;
+    left: -127px;
+  }
+  
+  &__title {
+    font-size: 120px;
+    margin: 0;
+    margin-left: 146px;
+  }
+  &__inner {
+    -webkit-flex-direction: column;
+    -moz-flex-direction: column;
+    -ms-flex-direction: column;
+    -o-flex-direction: column;
+    flex-direction: column;
+  }
+
+  &__block {
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: flex;
+    justify-content: space-between;
+  }
+  &__text {
+    display: inline-block;
+    font-size: 22px;
+    width: 100px;
+  }
+
+  &__carousel {
+    width: 1268px;
+  }
+}
+
+.bold-text {
+  font-weight: bold;
+}
+
+
