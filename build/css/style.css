@@ -1,10 +1,13 @@
+* {
+  box-sizing: border-box;
+}
 div[class$=inner] {
   display: -moz-flex;
   display: -ms-flex;
   display: -o-flex;
   display: -ms-flexbox;
   display: flex;
-  width: 1440px;
+  width: 1620px;
   margin: 0 auto;
 }
 header {
@@ -23,15 +26,41 @@ header .head__inner {
   display: flex;
   list-style-type: none;
   margin: 0;
+  text-transform: uppercase;
   -ms-flex-pack: justify;
       justify-content: space-between;
   width: 618px;
+}
+.main-nav__item {
+  -ms-align-self: center;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+}
+.item-separator:after {
+  content: "";
+  display: inline-block;
+  width: 3px;
+  height: 17px;
+  background-color: #569d60;
+  position: relative;
+  right: -27px;
+  top: 0;
+}
+.head__version {
+  -ms-align-self: center;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
 }
 .description {
   background-image: url(../img/description-back.png);
   background-size: contain;
   background-repeat: no-repeat;
-  background-position: center;
+  background-position: center top;
+}
+.description__inner {
+  padding-top: 270px;
 }
 .description__block {
   display: -moz-flex;
@@ -39,15 +68,14 @@ header .head__inner {
   display: -o-flex;
   display: -ms-flexbox;
   display: flex;
-  width: 850px;
+  width: 1100px;
   background-color: #40a500;
-  padding: 60px 125px 60px 180px;
+  padding: 47px 125px 43px 180px;
   -ms-flex-pack: justify;
       justify-content: space-between;
-  margin-left: -152px;
   position: relative;
-  bottom: -50px;
-  margin-top: 300px;
+  bottom: -30px;
+  left: -180px;
 }
 .description__text {
   width: 506px;
@@ -62,7 +90,7 @@ header .head__inner {
   background-image: url(../img/parks.png);
   background-repeat: no-repeat;
   position: relative;
-  left: -127px;
+  left: -153px;
 }
 .parks__title {
   font-size: 120px;
@@ -84,16 +112,238 @@ header .head__inner {
   -ms-flex-pack: justify;
       justify-content: space-between;
 }
-.parks__text {
+.parks__map {
   display: inline-block;
   font-size: 22px;
   width: 100px;
+}
+.parks__text {
+  font-size: 17px;
 }
 .parks__carousel {
   width: 1268px;
 }
 .bold-text {
   font-weight: bold;
+}
+.affiche {
+  padding-bottom: 70px;
+}
+.affiche__inner {
+  display: -moz-flex;
+  display: -ms-flex;
+  display: -o-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: justify;
+      justify-content: space-between;
+}
+.affiche__title {
+  width: 100px;
+  font-size: 37px;
+  text-transform: uppercase;
+  font-weight: bold;
+  margin-top: 0;
+}
+.affiche__date {
+  text-transform: uppercase;
+}
+.affiche__date span {
+  font-size: 42px;
+  margin-right: 30px;
+}
+.affiche__event {
+  font-size: 22px;
+}
+.affiche .affiche__date .item-separator:after {
+  right: -16px;
+  height: 23px;
+}
+.affiche__text {
+  font-size: 17px;
+}
+.affiche__block {
+  width: 1268px;
+  display: -moz-flex;
+  display: -ms-flex;
+  display: -o-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -moz-flex-direction: column;
+  -ms-flex-direction: column;
+  -o-flex-direction: column;
+  flex-direction: column;
+  -ms-align-items: center;
+  -ms-flex-align: center;
+      align-items: center;
+}
+.affiche__btn {
+  font-size: 22px;
+  color: #40a500;
+  border: 3px solid #42a401;
+  text-transform: uppercase;
+  width: 638px;
+  padding: 15px 0;
+  text-align: center;
+  cursor: pointer;
+}
+.partners,
+.contacts {
+  background-color: #e8e8e8;
+}
+.partners {
+  padding: 50px 0 45px 0;
+}
+.partners__title {
+  text-transform: uppercase;
+}
+.partners__logo {
+  width: 1268px;
+  display: -moz-flex;
+  display: -ms-flex;
+  display: -o-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-align-self: center;
+  -ms-flex-item-align: center;
+      align-self: center;
+}
+.partners__logo-item {
+  padding-right: 100px;
+  cursor: pointer;
+}
+.partners__inner {
+  display: -moz-flex;
+  display: -ms-flex;
+  display: -o-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: justify;
+      justify-content: space-between;
+}
+.contacts {
+  padding: 50px 0 45px 0;
+}
+.contacts__inner {
+  display: -moz-flex;
+  display: -ms-flex;
+  display: -o-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: justify;
+      justify-content: space-between;
+}
+.contacts__title {
+  text-transform: uppercase;
+}
+.contacts__block {
+  width: 1268px;
+  display: -moz-flex;
+  display: -ms-flex;
+  display: -o-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -moz-flex-direction: column;
+  -ms-flex-direction: column;
+  -o-flex-direction: column;
+  flex-direction: column;
+}
+.contacts__details {
+  display: -moz-flex;
+  display: -ms-flex;
+  display: -o-flex;
+  display: -ms-flexbox;
+  display: flex;
+}
+.contacts__details-item {
+  width: 600px;
+}
+.contacts__details-title {
+  font-size: 22px;
+}
+.contacts__form {
+  font-size: 14px;
+  display: -moz-flex;
+  display: -ms-flex;
+  display: -o-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -moz-flex-direction: column;
+  -ms-flex-direction: column;
+  -o-flex-direction: column;
+  flex-direction: column;
+}
+.contacts__form-input {
+  width: 286px;
+  background-color: #d4d4d4;
+  text-transform: uppercase;
+  padding: 10px 15px;
+  border: 0;
+  outline: none;
+  margin-bottom: 10px;
+}
+.contacts__form-btn {
+  background-color: #8c8c8c;
+  border: 0;
+  width: 286px;
+  padding: 10px 15px;
+  font-size: 14px;
+  font-weight: bold;
+  text-transform: uppercase;
+  color: #fff;
+  text-align: left;
+}
+.contacts__doc {
+  list-style-type: none;
+  display: -moz-flex;
+  display: -ms-flex;
+  display: -o-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  -o-flex-wrap: wrap;
+  flex-wrap: wrap;
+  margin: 0;
+  padding: 0;
+  margin-top: -10px;
+}
+.contacts__doc-item {
+  width: 50%;
+}
+.contacts__doc-item a {
+  color: #000;
+  text-decoration: none;
+}
+.contacts__doc-item:before {
+  content: "";
+  width: 50px;
+  height: 50px;
+  display: inline-block;
+  background-image: url(../img/pdf.png);
+  position: relative;
+  top: 25px;
+  left: 0;
+  background-repeat: no-repeat;
+}
+.contacts__details-item:last-child .contacts__details-title {
+  margin-bottom: 0;
+}
+footer {
+  background-color: #000;
+  padding: 28px 0 32px 0;
+}
+.copyright {
+  text-transform: uppercase;
+  color: #fff;
+}
+.footer__link-item:after {
+  content: "";
+  position: relative;
+  top: 0;
+  left: 0;
+}
+.vk:after {
+  background-image: url();
 }
 /*! normalize.css v3.0.1 | MIT License | git.io/normalize */
 html {
