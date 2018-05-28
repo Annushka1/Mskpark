@@ -111,6 +111,7 @@ header .head__inner {
   display: flex;
   -ms-flex-pack: justify;
       justify-content: space-between;
+  margin-top: 100px;
 }
 .parks__map {
   display: inline-block;
@@ -122,12 +123,24 @@ header .head__inner {
 }
 .parks__carousel {
   width: 1268px;
+  display: -moz-flex;
+  display: -ms-flex;
+  display: -o-flex;
+  display: -ms-flexbox;
+  display: flex;
+}
+.parks__carousel-item {
+  margin-right: 5px;
+}
+.parks__carousel-item:last-child {
+  margin-right: 0px;
 }
 .bold-text {
   font-weight: bold;
 }
 .affiche {
   padding-bottom: 70px;
+  margin-top: 80px;
 }
 .affiche__inner {
   display: -moz-flex;
@@ -158,6 +171,34 @@ header .head__inner {
 .affiche .affiche__date .item-separator:after {
   right: -16px;
   height: 23px;
+}
+.affiche__carousel {
+  width: 1268px;
+  display: -moz-flex;
+  display: -ms-flex;
+  display: -o-flex;
+  display: -ms-flexbox;
+  display: flex;
+}
+.affiche__carousel-item {
+  margin-right: 5px;
+}
+.affiche__carousel-item:last-child {
+  margin-right: 0px;
+}
+.affiche__news {
+  display: -moz-flex;
+  display: -ms-flex;
+  display: -o-flex;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 50px 0 50px;
+}
+.affiche__news-item {
+  margin-right: 5px;
+}
+.affiche__news-item:last-child {
+  margin-right: 0px;
 }
 .affiche__text {
   font-size: 17px;

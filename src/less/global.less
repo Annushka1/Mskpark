@@ -131,6 +131,7 @@ header {
     display: -o-flex;
     display: flex;
     justify-content: space-between;
+    margin-top: 100px;
   }
   &__map {
     display: inline-block;
@@ -145,6 +146,19 @@ header {
 
   &__carousel {
     width: 1268px;
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: flex;
+  }
+
+  &__carousel-item {
+    margin-right: 5px;
+  }
+
+  &__carousel-item:last-child {
+    margin-right: 0px;
   }
 }
 
@@ -154,6 +168,7 @@ header {
 
 .affiche {
   padding-bottom: 70px;
+  margin-top: 80px;
 
   &__inner {
     display: -webkit-flex;
@@ -189,7 +204,39 @@ header {
     height: 23px;
   }
 
+  &__carousel {
+    width: 1268px;
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: flex;
+  }
 
+  &__carousel-item {
+    margin-right: 5px;
+  }
+
+  &__carousel-item:last-child {
+    margin-right: 0px;
+  }
+
+  &__news {
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: flex;
+    margin: 50px 0 50px;
+  }
+
+  &__news-item {
+    margin-right: 5px;
+  }
+
+  &__news-item:last-child {
+    margin-right: 0px;
+  }
 
   &__text {
     font-size: 17px;
