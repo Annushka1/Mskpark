@@ -64,12 +64,12 @@
   font-style: italic;
 }
 div[class$=inner] {
+  width: 260px;
   display: -moz-flex;
   display: -ms-flex;
   display: -o-flex;
   display: -ms-flexbox;
   display: flex;
-  width: 1620px;
   margin: 0 auto;
 }
 header {
@@ -81,19 +81,8 @@ header .head__inner {
       justify-content: space-between;
 }
 .main-nav {
-  display: -moz-flex;
-  display: -ms-flex;
-  display: -o-flex;
-  display: -ms-flexbox;
-  display: flex;
-  list-style-type: none;
-  margin: 0;
-  text-transform: uppercase;
-  padding-left: 0;
+  display: none;
   font-family: 'IntroBlack';
-  -ms-flex-pack: justify;
-      justify-content: space-between;
-  width: 618px;
 }
 .main-nav__item {
   -ms-align-self: center;
@@ -101,6 +90,10 @@ header .head__inner {
       -ms-grid-row-align: center;
       align-self: center;
   cursor: pointer;
+}
+.main-nav__item a {
+  text-decoration: none;
+  color: #000;
 }
 .item-separator:after {
   content: "";
@@ -117,13 +110,15 @@ header .head__inner {
   -ms-flex-item-align: center;
       -ms-grid-row-align: center;
       align-self: center;
-  color: #00712f;
   font-family: 'MuseoCyrillic300';
   text-transform: uppercase;
   cursor: pointer;
 }
+.head__version a {
+  color: #00712f;
+}
 .head__link {
-  width: 330px;
+  width: 100%;
   display: -moz-flex;
   display: -ms-flex;
   display: -o-flex;
@@ -131,18 +126,21 @@ header .head__inner {
   display: flex;
   -ms-flex-pack: justify;
       justify-content: space-between;
-  margin-left: 90px;
-  margin-top: 10px;
 }
 .head__link a {
   cursor: pointer;
 }
 .description {
-  background-image: url(../img/description-back.png);
-  background-size: 100%;
+  background-image: url(../img/description-back-sx.png);
+  background-size: contain;
+  width: 320px;
+  margin: 0 auto;
   background-repeat: no-repeat;
   background-position: center top;
-  padding: 300px 0 0 0;
+  padding: 267px 0 0;
+}
+.description__title img {
+  width: 150px;
 }
 .description__block {
   display: -moz-flex;
@@ -150,32 +148,36 @@ header .head__inner {
   display: -o-flex;
   display: -ms-flexbox;
   display: flex;
-  width: 1100px;
+  -moz-flex-direction: column;
+  -ms-flex-direction: column;
+  -o-flex-direction: column;
+  flex-direction: column;
+  width: auto;
   background-color: #40a500;
-  padding: 47px 125px 43px 142px;
-  -ms-flex-pack: justify;
-      justify-content: space-between;
+  padding: 30px;
 }
 .description__text {
-  width: 506px;
+  width: 100%;
   color: #fff;
   font-size: 22px;
   line-height: 1.3;
   font-family: 'MuseoCyrillic100';
 }
 .parks {
-  padding-top: 80px;
+  margin: 0 auto;
 }
 .parks__title-block {
-  background-image: url(../img/parks.png);
+  background-image: url(../img/parks-xs.png);
   background-repeat: no-repeat;
+  margin: 0 auto;
   position: relative;
-  left: -153px;
+  padding: 90px 0 0 0;
+  background-position: center top;
 }
 .parks__title {
-  font-size: 120px;
+  font-size: 75px;
   margin: 0;
-  margin-left: 121px;
+  text-align: center;
   font-family: 'IntroBlack';
   text-transform: uppercase;
 }
@@ -193,7 +195,6 @@ header .head__inner {
   display: flex;
   -ms-flex-pack: justify;
       justify-content: space-between;
-  margin-top: 100px;
 }
 .parks__map {
   display: inline-block;
@@ -228,6 +229,10 @@ header .head__inner {
 }
 .parks__carousel-item {
   margin-right: 5px;
+  width: 25%;
+}
+.parks__img {
+  width: 100%;
 }
 .parks__carousel-item:last-child {
   margin-right: 0px;
@@ -245,8 +250,10 @@ header .head__inner {
   display: -o-flex;
   display: -ms-flexbox;
   display: flex;
-  -ms-flex-pack: justify;
-      justify-content: space-between;
+  -moz-flex-direction: column;
+  -ms-flex-direction: column;
+  -o-flex-direction: column;
+  flex-direction: column;
 }
 .affiche__title {
   width: 100px;
@@ -276,7 +283,7 @@ header .head__inner {
   height: 23px;
 }
 .affiche__carousel {
-  width: 1268px;
+  width: 100%;
   display: -moz-flex;
   display: -ms-flex;
   display: -o-flex;
@@ -286,6 +293,10 @@ header .head__inner {
 .affiche__carousel-item {
   margin-right: 5px;
   font-family: 'MuseoCyrillic300';
+  width: 25%;
+}
+.affiche__img {
+  width: 100%;
 }
 .affiche__carousel-item:last-child {
   margin-right: 0px;
@@ -297,10 +308,12 @@ header .head__inner {
   display: -ms-flexbox;
   display: flex;
   margin: 50px 0 50px;
+  width: 100%;
 }
 .affiche__news-item {
   margin-right: 5px;
   font-family: 'MuseoCyrillic300';
+  width: 25%;
 }
 .affiche__news-item:last-child {
   margin-right: 0px;
@@ -325,14 +338,14 @@ header .head__inner {
       align-items: center;
 }
 .affiche__btn {
-  font-size: 22px;
   color: #40a500;
   border: 3px solid #42a401;
   text-transform: uppercase;
-  width: 638px;
   padding: 15px 0;
   text-align: center;
   cursor: pointer;
+  width: 100%;
+  font-size: 18px;
 }
 .partners,
 .contacts {
@@ -346,7 +359,6 @@ header .head__inner {
   font-family: 'IntroBlack';
 }
 .partners__logo {
-  width: 1268px;
   display: -moz-flex;
   display: -ms-flex;
   display: -o-flex;
@@ -355,10 +367,18 @@ header .head__inner {
   -ms-align-self: center;
   -ms-flex-item-align: center;
       align-self: center;
+  width: 100%;
+  -moz-flex-direction: column;
+  -ms-flex-direction: column;
+  -o-flex-direction: column;
+  flex-direction: column;
 }
 .partners__logo-item {
-  padding-right: 100px;
   cursor: pointer;
+  margin-bottom: 40px;
+}
+.partners__logo-item img {
+  max-width: 100%;
 }
 .partners__inner {
   display: -moz-flex;
@@ -366,8 +386,10 @@ header .head__inner {
   display: -o-flex;
   display: -ms-flexbox;
   display: flex;
-  -ms-flex-pack: justify;
-      justify-content: space-between;
+  -moz-flex-direction: column;
+  -ms-flex-direction: column;
+  -o-flex-direction: column;
+  flex-direction: column;
 }
 .contacts {
   padding: 50px 0 45px 0;
@@ -379,15 +401,17 @@ header .head__inner {
   display: -o-flex;
   display: -ms-flexbox;
   display: flex;
-  -ms-flex-pack: justify;
-      justify-content: space-between;
+  -moz-flex-direction: column;
+  -ms-flex-direction: column;
+  -o-flex-direction: column;
+  flex-direction: column;
 }
 .contacts__title {
   text-transform: uppercase;
   font-family: 'IntroBlack';
 }
 .contacts__block {
-  width: 1268px;
+  width: 100%;
   display: -moz-flex;
   display: -ms-flex;
   display: -o-flex;
@@ -404,9 +428,13 @@ header .head__inner {
   display: -o-flex;
   display: -ms-flexbox;
   display: flex;
+  -moz-flex-direction: column;
+  -ms-flex-direction: column;
+  -o-flex-direction: column;
+  flex-direction: column;
 }
 .contacts__details-item {
-  width: 600px;
+  width: 100%;
 }
 .contacts__details-title {
   font-size: 22px;
@@ -426,7 +454,7 @@ header .head__inner {
   flex-direction: column;
 }
 .contacts__form-input {
-  width: 286px;
+  width: 100%;
   background-color: #d4d4d4;
   text-transform: uppercase;
   padding: 10px 15px;
@@ -437,7 +465,7 @@ header .head__inner {
 .contacts__form-btn {
   background-color: #8c8c8c;
   border: 0;
-  width: 286px;
+  width: 100%;
   padding: 10px 15px;
   font-size: 14px;
   font-weight: bold;
@@ -458,9 +486,6 @@ header .head__inner {
   margin: 0;
   padding: 0;
   margin-top: -10px;
-}
-.contacts__doc-item {
-  width: 50%;
 }
 .contacts__doc-item a {
   color: #000;
@@ -491,12 +516,22 @@ footer {
   background-color: #000;
   padding: 28px 0 32px 0;
 }
+.footer__inner {
+  -moz-flex-direction: column;
+  -ms-flex-direction: column;
+  -o-flex-direction: column;
+  flex-direction: column;
+}
 .copyright {
   text-transform: uppercase;
   color: #fff;
+  -ms-flex-order: 1;
+      order: 1;
+  font-size: 14px;
 }
 .footer__link {
-  width: 360px;
+  width: 100%;
+  margin-bottom: 20px;
   display: -moz-flex;
   display: -ms-flex;
   display: -o-flex;
@@ -504,7 +539,6 @@ footer {
   display: flex;
   -ms-flex-pack: justify;
       justify-content: space-between;
-  margin-left: 183px;
   -ms-align-items: center;
   -ms-flex-align: center;
       align-items: center;
@@ -520,7 +554,7 @@ footer {
 .directors__text {
   font-family: 'MuseoCyrillic300';
   font-size: 17px;
-  width: 1200px;
+  width: 100%;
 }
 .directors__text .bold-text {
   font-family: 'IntroBlack';
@@ -538,13 +572,15 @@ footer {
   display: -o-flex;
   display: -ms-flexbox;
   display: flex;
-  -ms-flex-pack: justify;
-      justify-content: space-between;
+  -moz-flex-direction: column;
+  -ms-flex-direction: column;
+  -o-flex-direction: column;
+  flex-direction: column;
 }
 .directors__option-text {
   font-family: 'MuseoCyrillic300';
   font-size: 17px;
-  width: 622px;
+  width: 100%;
 }
 .directors__option-text .bold-text {
   font-family: 'IntroBlack';
@@ -558,16 +594,10 @@ footer {
   right: -16px;
 }
 .directors__inner {
-  display: -moz-flex;
-  display: -ms-flex;
-  display: -o-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-pack: justify;
-      justify-content: space-between;
-  -ms-flex-wrap: wrap;
-  -o-flex-wrap: wrap;
-  flex-wrap: wrap;
+  -moz-flex-direction: column;
+  -ms-flex-direction: column;
+  -o-flex-direction: column;
+  flex-direction: column;
 }
 .directors__carousel {
   display: -moz-flex;
@@ -578,9 +608,11 @@ footer {
   -ms-flex-pack: justify;
       justify-content: space-between;
   margin-top: 60px;
+  width: 100%;
 }
 .directors__carousel-item {
   text-align: center;
+  width: 100%;
 }
 .directors__name {
   font-family: 'IntroBlack';
@@ -592,7 +624,7 @@ footer {
   width: 210px;
 }
 .directors__block {
-  width: 1286px;
+  width: 100%;
 }
 /*! normalize.css v3.0.1 | MIT License | git.io/normalize */
 html {
@@ -773,13 +805,123 @@ td,
 th {
   padding: 0;
 }
-@media (max-width: 1690px) {
+@media (min-width: 1024px) {
   div[class$=inner] {
-    width: 1180px;
+    width: 924px;
+  }
+  .main-nav {
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: -ms-flexbox;
+    display: flex;
+    list-style-type: none;
+    margin: 0;
+    text-transform: uppercase;
+    padding-left: 0;
+    -ms-flex-wrap: wrap;
+    -o-flex-wrap: wrap;
+    flex-wrap: wrap;
+    width: 565px;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+  }
+  .head__link {
+    width: 280px;
+    margin-top: 10px;
+  }
+  .description {
+    background-image: url(../img/description-back.png);
+    width: 1024px;
+  }
+  .description__block {
+    -moz-flex-direction: row;
+    -ms-flex-direction: row;
+    -o-flex-direction: row;
+    flex-direction: row;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    width: 100%;
+  }
+  .description__text {
+    width: 620px;
+    margin-right: 29px;
+  }
+  .parks__title-block {
+    background-image: url(../img/parks-sm.png);
+    padding-top: 5px;
+  }
+  .parks__title {
+    text-align: left;
+    width: 924px;
+    margin: 0 auto;
+    font-size: 120px;
+  }
+  .parks__block {
+    margin-top: 100px;
+  }
+  .affiche__inner {
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+  }
+  .affiche__btn {
+    width: 643px;
+    font-size: 22px;
+  }
+  .partners__logo {
+    width: 1268px;
+  }
+  .partners__logo-item {
+    padding-right: 100px;
+  }
+  .partners__inner {
+    -moz-flex-direction: row;
+    -ms-flex-direction: row;
+    -o-flex-direction: row;
+    flex-direction: row;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+  }
+  .contacts__inner {
+    -moz-flex-direction: row;
+    -ms-flex-direction: row;
+    -o-flex-direction: row;
+    flex-direction: row;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+  }
+  .contacts__block {
+    -moz-flex-direction: row;
+    -ms-flex-direction: row;
+    -o-flex-direction: row;
+    flex-direction: row;
+  }
+  .contacts__details {
+    -moz-flex-direction: row;
+    -ms-flex-direction: row;
+    -o-flex-direction: row;
+    flex-direction: row;
+  }
+  .directors__option {
+    -moz-flex-direction: row;
+    -ms-flex-direction: row;
+    -o-flex-direction: row;
+    flex-direction: row;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+  }
+  .directors__option-text {
+    width: 49%;
+  }
+  .directors__inner {
+    -ms-flex-pack: justify;
+    justify-content: space-between;
     -ms-flex-wrap: wrap;
     -o-flex-wrap: wrap;
     flex-wrap: wrap;
   }
+}
+@media (max-width: 1690px) {
   header .head__inner {
     -ms-flex-wrap: wrap;
     -o-flex-wrap: wrap;
@@ -791,42 +933,15 @@ th {
   }
 }
 @media (max-width: 1600px) {
-  .description {
-    padding: 446px 0 0;
-  }
-  .description__block {
-    width: 100%;
-    padding: 13px 125px 12px 210px;
-    -ms-flex-pack: start;
-    justify-content: flex-start;
-  }
-  .description__text {
-    margin-left: 150px;
-  }
   .parks__block {
     -ms-flex-wrap: wrap;
     flex-wrap: wrap;
   }
-  .contacts__block {
-    -moz-flex-direction: row;
-    -ms-flex-direction: row;
-    -o-flex-direction: row;
-    flex-direction: row;
-    -ms-flex-pack: justify;
-    justify-content: space-between;
+  .affiche__event {
+    width: 100%;
   }
-  .contacts__details {
-    -moz-flex-direction: column;
-    -ms-flex-direction: column;
-    -o-flex-direction: column;
-    flex-direction: column;
-    width: 50%;
-  }
-  .contacts__details:last-child {
-    width: 25%;
-  }
-  .contacts__details:first-child .contact__text:last-child {
-    margin-top: 50px;
+  .affiche__block {
+    width: 100%;
   }
   .contacts__doc {
     -moz-flex-direction: column;
@@ -839,10 +954,6 @@ th {
   }
   .doc__block {
     margin-top: 65px;
-  }
-  .footer__inner {
-    -ms-flex-pack: justify;
-    justify-content: space-between;
   }
 }
 

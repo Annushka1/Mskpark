@@ -15,12 +15,13 @@
       <div class="gamburger"><span></span></div>
       <div class="head__inner">
           <ul class="main-nav">
-            <li class="main-nav__item item-separator">парки</li>
-            <li class="main-nav__item item-separator">афиша</li>
-            <li class="main-nav__item item-separator">партнёры</li>
-            <li class="main-nav__item">контакты</li>
+            <li class="main-nav__item item-separator"><a href="#parks">парки</a></li>
+            <li class="main-nav__item item-separator"><a href="#affiche">афиша</a></li>
+            <li class="main-nav__item item-separator"><a href="#partners">партнёры</a></li>
+            <li class="main-nav__item"><a href="#contacts">контакты</a></li>
+            <li class="main-nav__item head__version"><a href="">версия для слабовидящих</a></li>
           </ul>
-          <span class="head__version">версия для слабовидящих</span>
+         <!--  <span class="head__version">версия для слабовидящих</span> -->
           <div class="head__link">
             <a class="head__department"><img src="img/logo_DK_01.svg"></a>
           <a class="head__logo"><img src="img/Мосгорпарк_01.svg"></a>
@@ -43,7 +44,7 @@
           <p class="directors__option-text"><span class="bold-text item-separator"> Цели</span>  Мосгорпарк курирует благоустройство и развитие парковых территорий, подведомственных Департаменту культуры города Москвы, в том числе создание новой инфраструктуры, сервисов и услуг, а также организацию мероприятий и регулярных занятий. </p>
           <p class="directors__option-text">Мосгорпарк также осуществляет функции, закрепленные за Департаментом культуры города Москвы согласно постановлению Правительства Москвы от 13.09.2013 N 606-ПП, по координации взаимодействия органов исполнительной власти города Москвы, органов местного самоуправления, юридических и физических лиц, индивидуальных предпринимателей по вопросам использования и развития пешеходных зон общегородского значения города Москвы.</p>
         </div>
-        <div class="directors__carousel">
+        <div class="directors__carousel" style="display: none;">
           <div class="directors__carousel-item">
             <img src="img/13.jpg" alt="">
             <p class="directors__name">Вячеслав ДУНАЕВ</p>
@@ -70,15 +71,15 @@
         
       </div>
     </div>
-    <div class="parks">
-      
-      <div class="parks__inner">
-        <div class="parks__title-block">
+    <div class="parks" id="parks">
+      <div class="parks__title-block">
           <h2 class="parks__title">Парки</h2>
         </div>
+      <div class="parks__inner">
+        
         <div class="parks__block">
           <a class="parks__map">показать на карте</a>
-        <div class="parks__carousel">
+        <div class="parks__carousel" style="display: none;">
           <div class="parks__carousel-item"><img class="parks__img" src="img/01.jpg">
             <p class="parks__text">ЦПКиО им. М. Горького</p>
           </div>
@@ -96,11 +97,11 @@
         
       </div>
     </div>
-    <div class="affiche">
+    <div class="affiche" id="affiche">
       <div class="affiche__inner">
         <p class="affiche__title">Афиша</p>
         <div class="affiche__block">
-          <div class="affiche__carousel">
+          <div class="affiche__carousel"  style="display: none;">
           <div class="affiche__carousel-item"><img class="affiche__img" src="img/05.jpg">
             <p class="affiche__date"><span class="item-separator bold-text">28</span>октября</p>
             <p class="affiche__event"><span class="bold-text">Занятия зумбой в саду "Эрмитаж"</p>
@@ -122,7 +123,7 @@
             <p class="affiche__text">ПКиО «Сокольники»</p>
           </div>
         </div>
-        <div class="affiche__news">
+        <div class="affiche__news" style="display: none;">
           <div class="affiche__news-item"><img class="affiche__img" src="img/09.jpg">
             <p class="affiche__date"><span class="item-separator bold-text">28</span>октября</p>
             <p class="affiche__event"><span class="bold-text">Занятия зумбой в саду "Эрмитаж"</p>
@@ -150,7 +151,7 @@
 
       </div>
     </div>
-    <div class="partners">
+    <div class="partners" id="partners">
       <div class="partners__inner">
         <h2 class="partners__title">Партнеры</h2>
         <div class="partners__logo">
@@ -159,7 +160,7 @@
           <a class="partners__logo-item"><img src="img/logo_AP.svg"></a></div>
       </div>
     </div>
-    <div class="contacts">
+    <div class="contacts" id="contacts">
       <div class="contacts__inner">
         <h2 class="contacts__title">Контакты</h2>
         <div class="contacts__block">
@@ -172,19 +173,20 @@
             <div class="contact__details-email"><a href="mailto:pr@mosgor-park.ru">pr@mosgor-park.ru </a><span> для СМИ</span></div>
           </div>
           <div class="contacts__details-item">
-            <h3 class="contacts__details-title">ОФИЦИАЛЬНАЯ ИНФОРМАЦИЯ</h3>
-            <p class="contact__text"><span class="bold-text">ЮРИДИЧЕСКОЕ НАЗВАНИЕ</span>   |    Государственное казенное учреждение<br> города Москвы «Объединенная дирекция по развитию парков культуры и отдыха города Москвы» (ГКУ «Объединенная дирекция «Мосгорпарк»)</p>
-            <p class="contact__text"><span class="bold-text">УЧРЕДИТЕЛЬ</span>   |    Департамент культуры города Москвы. <br>Учреждено 13 октября 2011 года.</p>
-          </div>
-        </div>
-        <div class="contacts__details">
-          <div class="contacts__details-item">
             <h3 class="contacts__details-title">Подписка на новости</h3>
             <form class="contacts__form" method="post" action="#/subscribe">
               <input class="contacts__form-input" type="email" placeholder="Ваш e-mail" name="email">
               <input class="contacts__form-btn" type="submit" value="Подписаться на новости">
           </form>
           </div>
+        </div>
+        <div class="contacts__details">
+          <div class="contacts__details-item">
+            <h3 class="contacts__details-title">ОФИЦИАЛЬНАЯ ИНФОРМАЦИЯ</h3>
+            <p class="contact__text"><span class="bold-text">ЮРИДИЧЕСКОЕ НАЗВАНИЕ</span>   |    Государственное казенное учреждение<br> города Москвы «Объединенная дирекция по развитию парков культуры и отдыха города Москвы» (ГКУ «Объединенная дирекция «Мосгорпарк»)</p>
+            <p class="contact__text"><span class="bold-text">УЧРЕДИТЕЛЬ</span>   |    Департамент культуры города Москвы. <br>Учреждено 13 октября 2011 года.</p>
+          </div>
+          
           <div class="contacts__details-item doc__block">
             <h3 class="contacts__details-title">Устав дирекции</h3>
             <ul class="contacts__doc">
