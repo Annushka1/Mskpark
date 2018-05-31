@@ -74,7 +74,7 @@ div[class$=inner] {
 }
 header {
   font-size: 22px;
-  padding: 30px 30px 31px 30px;
+  padding: 30px 30px 24px 30px;
 }
 header .head__inner {
   -moz-flex-direction: column;
@@ -87,6 +87,7 @@ header .head__inner {
   position: relative;
   bottom: -15px;
   left: 0;
+  padding-bottom: 13px;
   display: block;
   cursor: pointer;
   -ms-flex-order: 1;
