@@ -630,6 +630,10 @@ header {
 .affiche {
   padding-bottom: 70px;
   margin-top: 80px;
+  @media (min-width: 1024px) {
+    margin-top: 50px;
+    padding-bottom: 55px;
+  }
 
   &__inner {
     display: -webkit-flex;
@@ -661,6 +665,7 @@ header {
     padding-left: 30px;
     @media (min-width: 1024px) {
       font-size: 37px;
+      padding-left: 0;
     }
   }
 
@@ -668,6 +673,9 @@ header {
     text-transform: uppercase;
     font-size: 14px;
     padding: 0 30px;
+    @media (min-width: 1024px) {
+      padding: 0;
+    }
     span {
       font-size: 33px;
       margin-right: 30px;
@@ -684,6 +692,9 @@ header {
     margin-bottom: 0;
     width: 285px;
     padding: 0 30px;
+    @media (min-width: 1024px) {
+      padding: 0;
+    }
 
     @media (min-width: 1024px) {
       font-size: 22px;
@@ -698,6 +709,9 @@ header {
     right: -16px;
     height: 23px;
     top: 9px;
+    @media (min-width: 1024px) {
+      top: 17px;
+    }
   }
 
   &__carousel {
@@ -710,10 +724,12 @@ header {
     @media (min-width: 1024px) {
       .slick-next {
         top: 143px;
+        right: -33px;
       }
 
       .slick-prev {
         top: 144px;
+        left: -34px;
       }
     }
   }
@@ -729,8 +745,8 @@ header {
   &__img {
     width: 100%;
     @media (min-width: 1024px) {
-      width: 302px;
-      height: 272px;
+      // width: 302px;
+      // height: 272px;
     }
   }
 
@@ -757,6 +773,7 @@ header {
       -ms-flex-direction: row;
       -o-flex-direction: row;
       flex-direction: row;
+      margin-bottom: 23px;
     }
   }
 
@@ -781,8 +798,10 @@ header {
     margin-top: 8px;
     font-size: 14px;
     padding: 0 30px;
+
     @media (min-width: 1024px) {
       font-size: 17px;
+      padding: 0;
     }
   }
 
@@ -829,7 +848,7 @@ header {
 .partners {
   padding-top: 13px;
   @media (min-width: 1024px) {
-    padding: 20px 0 0px 0;
+    padding: 7px 0 0px 0;
   }
   
 
@@ -839,6 +858,7 @@ header {
     font-size: 28px;
     @media (min-width: 1024px) {
       font-size: 37px;
+      margin-bottom: 29px;
     }
   }
 
@@ -916,6 +936,10 @@ header {
 .contacts {
   padding: 50px 0 45px 0;
   font-family: 'MuseoCyrillic300';
+  @media (min-width: 1024px) {
+    padding-top: 0;
+    padding-bottom: 40px;
+  }
 
   &__inner {
     display: -webkit-flex;
@@ -946,6 +970,8 @@ header {
     font-size: 28px;
     @media (min-width: 1024px) {
       font-size: 37px;
+      margin-top: 15px;
+      margin-bottom: 10px;
     }
   }
 
@@ -1000,6 +1026,9 @@ header {
       flex-direction: row;
       width: 100%;
       justify-content: space-between;
+      &:last-child {
+        margin-top: 52px;
+      }
     }
 
     @media (min-width: 1920px) {
@@ -1060,6 +1089,10 @@ header {
 
   &__details-text {
     font-size: 14px;
+    @media (min-width: 1024px) {
+      margin-top: 0;
+      margin-bottom: 9px;
+    }
   }
 
   &__details-title {
@@ -1068,6 +1101,7 @@ header {
     text-transform: uppercase;
     @media (min-width: 1024px) {
       font-size: 22px;
+      margin-top: 11px;
     }
   }
 
@@ -1133,6 +1167,7 @@ header {
       -ms-flex-direction: column;
       -o-flex-direction: column;
       flex-direction: column;
+      padding-bottom: 10px;
     }
   }
 
@@ -1165,12 +1200,10 @@ header {
   }
 }
 
-.contacts__details-item:last-child .contacts__details-title {
-  margin-bottom: 0;
-  // @media (max-width: 1600px) {
-  //   margin-top: 75px;
-  // }
-}
+// .contacts__details-item:last-child .contacts__details-title {
+//   margin-bottom: 0;
+  
+// }
 
 .contact__details-email span, .contact__details-phone span {
   font-size: 14px;
@@ -1188,9 +1221,9 @@ header {
 }
 
 .doc__block {
-  // @media (max-width: 1600px) {
-  //   margin-top: 65px;
-  // }
+  .contacts__details-title {
+    margin-bottom: 0;
+  }
 }
 
 // footer
@@ -1212,6 +1245,7 @@ footer {
   // }
 
   @media (min-width: 1024px) {
+    width: 924px;
     padding: 0;
     -webkit-flex-direction: row;
     -moz-flex-direction: row;
@@ -1228,6 +1262,9 @@ footer {
   font-size: 14px;
   @media (min-width: 1024px) {
     order: 0;
+    font-size: 17px;
+    -ms-align-self: center;
+    align-self: center;
   }
 }
 

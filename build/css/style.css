@@ -610,9 +610,6 @@ header .head__inner {
   left: 0;
   background-repeat: no-repeat;
 }
-.contacts__details-item:last-child .contacts__details-title {
-  margin-bottom: 0;
-}
 .contact__details-email span,
 .contact__details-phone span {
   font-size: 14px;
@@ -623,6 +620,9 @@ header .head__inner {
   font-size: 18px;
   font-family: 'IntroBlack';
   color: #000;
+}
+.doc__block .contacts__details-title {
+  margin-bottom: 0;
 }
 footer {
   background-color: #000;
@@ -1087,6 +1087,10 @@ th {
   .parks__carousel-item {
     margin-left: 5px;
   }
+  .affiche {
+    margin-top: 50px;
+    padding-bottom: 55px;
+  }
   .affiche__inner {
     padding: 0 47px;
     -ms-flex-pack: justify;
@@ -1094,44 +1098,55 @@ th {
   }
   .affiche__title {
     font-size: 37px;
+    padding-left: 0;
+  }
+  .affiche__date {
+    padding: 0;
   }
   .affiche__date span {
     font-size: 42px;
   }
   .affiche__event {
+    padding: 0;
+  }
+  .affiche__event {
     font-size: 22px;
+  }
+  .affiche .affiche__date .item-separator:after {
+    top: 17px;
   }
   .affiche__carousel .slick-next {
     top: 143px;
+    right: -33px;
   }
   .affiche__carousel .slick-prev {
     top: 144px;
+    left: -34px;
   }
   .affiche__carousel-item {
     margin-left: 5px;
-  }
-  .affiche__img {
-    width: 302px;
-    height: 272px;
   }
   .affiche__news {
     -moz-flex-direction: row;
     -ms-flex-direction: row;
     -o-flex-direction: row;
     flex-direction: row;
+    margin-bottom: 23px;
   }
   .affiche__text {
     font-size: 17px;
+    padding: 0;
   }
   .affiche__btn {
     width: 643px;
     font-size: 22px;
   }
   .partners {
-    padding: 20px 0 0px 0;
+    padding: 7px 0 0px 0;
   }
   .partners__title {
     font-size: 37px;
+    margin-bottom: 29px;
   }
   .partners__logo {
     width: 100%;
@@ -1142,8 +1157,14 @@ th {
     -ms-flex-pack: justify;
     justify-content: space-between;
   }
+  .contacts {
+    padding-top: 0;
+    padding-bottom: 40px;
+  }
   .contacts__title {
     font-size: 37px;
+    margin-top: 15px;
+    margin-bottom: 10px;
   }
   .contacts__details {
     -moz-flex-direction: row;
@@ -1154,6 +1175,9 @@ th {
     -ms-flex-pack: justify;
     justify-content: space-between;
   }
+  .contacts__details:last-child {
+    margin-top: 52px;
+  }
   .contacts__details-item {
     width: 65%;
   }
@@ -1163,14 +1187,20 @@ th {
   .contacts__text {
     width: 500px;
   }
+  .contacts__details-text {
+    margin-top: 0;
+    margin-bottom: 9px;
+  }
   .contacts__details-title {
     font-size: 22px;
+    margin-top: 11px;
   }
   .contact__details-email a,
   .contact__details-phone {
     font-size: 22px;
   }
   .footer__inner {
+    width: 924px;
     padding: 0;
     -moz-flex-direction: row;
     -ms-flex-direction: row;
@@ -1182,6 +1212,11 @@ th {
   .copyright {
     -ms-flex-order: 0;
     order: 0;
+    font-size: 17px;
+    -ms-align-self: center;
+    -ms-flex-item-align: center;
+    -ms-grid-row-align: center;
+    align-self: center;
   }
   .footer__link {
     width: 355px;
@@ -1323,6 +1358,7 @@ th {
     -ms-flex-direction: column;
     -o-flex-direction: column;
     flex-direction: column;
+    padding-bottom: 10px;
   }
 }
 
