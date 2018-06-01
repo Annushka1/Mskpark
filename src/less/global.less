@@ -229,7 +229,9 @@ header {
   }
 
   @media (min-width: 1920px) {
-    width: 1010px;
+    width: 1049px;
+    -ms-align-self: flex-start;
+    align-self: flex-start;
   }
   
   
@@ -331,7 +333,7 @@ header {
     padding: 0; 
   }
   @media (min-width: 1920px) {
-    margin-left: 30px;
+    margin-left: 80px;
   }
 }
 
@@ -390,6 +392,7 @@ header {
     width: 1920px;
     -webkit-background-size: cover;
     background-size: cover;
+    padding-top: 339px;
   }
 
   // @media (max-width: 1600px) {
@@ -408,6 +411,12 @@ header {
   // &__inner {
   //   padding-top: 270px;
   // }
+
+  &__title {
+    @media (min-width: 1024px) {
+      margin-top: 9px;
+    } 
+  }
 
   &__title img {
     width: 150px;
@@ -433,13 +442,16 @@ header {
     -o-flex-direction: row;
     flex-direction: row;
       justify-content: space-between;
-      p30-47-30-47
+      padding: 30px 47px 30px 47px;
       width: 100%;
     }
 
     @media (min-width: 1920px) {
       width: 1100px;
+      padding-top: 50px;
       padding-left: 150px;
+      position: relative;
+      bottom: -50px;  
     }
     // @media (max-width: 1600px) {
     //   width: 100%;
@@ -493,7 +505,7 @@ header {
     }
     @media (min-width: 1920px) {
       background-image: url(../img/parks.png);
-      background-position: 122px 0;
+      background-position: 38px 0;
       padding: 0;
     }
   }
@@ -524,6 +536,11 @@ header {
     padding: 6px 0 0 0;
     @media (min-width: 1024px) {
       padding: 0 47px;
+    }
+
+    @media (min-width: 1920px) {
+      padding: 0;
+
     }
   }
 
@@ -651,6 +668,15 @@ header {
     @media (min-width: 1024px) {
       padding: 0 47px;
       justify-content: space-between;      
+    }
+    @media (min-width: 1920px) {
+      padding: 0;
+      -webkit-flex-direction: row;
+      -moz-flex-direction: row;
+      -ms-flex-direction: row;
+      -o-flex-direction: row;
+      flex-direction: row;
+      justify-content: space-between;
     }
   }
   
@@ -783,8 +809,15 @@ header {
     &:nth-child(4n) {
       display: none;
     }
-
-
+    @media (min-width: 1024px) {
+      width: 33%;
+    }
+    @media (min-width: 1920px) {
+      &:nth-child(4n) {
+        display: block;
+      }
+      width: 25%;
+    }
   }
 
 
@@ -890,6 +923,7 @@ header {
 
     @media (min-width: 1920px) {
       width: 1290px;
+      padding-top: 35px;
     }
     // @media (max-width: 1600px) {
     //   width: 100%;
@@ -922,7 +956,7 @@ header {
     flex-direction: column;
     padding: 0 30px;
     @media (min-width: 1920px) {
-      padding: 0 47px;
+      padding: 0;
       -webkit-flex-direction: row;
       -moz-flex-direction: row;
       -ms-flex-direction: row;
@@ -1295,6 +1329,10 @@ footer {
   @media (min-width: 1024px) {
     padding: 27px 0 0 0; 
   }
+  @media (min-width: 1920px) {
+    padding-top: 117px;
+  }
+
 
 
   &__title {
@@ -1374,6 +1412,9 @@ footer {
       width: 49%;
       font-size: 17px;
     }
+    @media (min-width: 1920px) {
+
+    }
     .bold-text {
       font-family: 'IntroBlack';
       font-size: 18px;
@@ -1410,7 +1451,14 @@ footer {
     -o-flex-wrap: wrap;
     flex-wrap: wrap;
     }
-    
+    @media (min-width: 1920px) {
+      -webkit-flex-direction: row;
+      -moz-flex-direction: row;
+      -ms-flex-direction: row;
+      -o-flex-direction: row;
+      flex-direction: row;
+      padding: 0;
+    }
   }
 
   &__carousel {
@@ -1427,6 +1475,9 @@ footer {
       margin-top: 15px;
       margin-bottom: 47px;
     }
+    @media (min-width: 1920px) {
+      margin-top: 49px;
+    }
     img {
       margin: 0 auto;
     }
@@ -1434,12 +1485,19 @@ footer {
     .slick-prev.slick-arrow:before {
       top: -76px;
       left: 6px;
+      @media (min-width: 1920px) {
+        // right: -3px;
+      }
     }
 
     .slick-next.slick-arrow:after {
       top: -96px;
       left: -13px;
     }
+
+    @media (min-width: 1920px) {
+        left: -35px;
+      }
     
   }
 
@@ -1465,7 +1523,11 @@ footer {
   }
 
   &__block {
-    width: 100%;}
+    width: 100%;
+    @media (min-width: 1920px) {
+      width: 1268px;
+    }
+  }
 }
 
 .slick-prev.slick-arrow:before {

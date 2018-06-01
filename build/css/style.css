@@ -1038,6 +1038,9 @@ th {
     background-image: url(../img/description-back.png);
     width: 1024px;
   }
+  .description__title {
+    margin-top: 9px;
+  }
   .description__block {
     -moz-flex-direction: row;
     -ms-flex-direction: row;
@@ -1045,7 +1048,8 @@ th {
     flex-direction: row;
     -ms-flex-pack: justify;
     justify-content: space-between;
-    p30-47-30-47width: 100%;
+    padding: 30px 47px 30px 47px;
+    width: 100%;
   }
   .description__text {
     width: 620px;
@@ -1132,6 +1136,9 @@ th {
     -o-flex-direction: row;
     flex-direction: row;
     margin-bottom: 23px;
+  }
+  .affiche__news-item {
+    width: 33%;
   }
   .affiche__text {
     font-size: 17px;
@@ -1272,35 +1279,61 @@ th {
     width: 1620px;
   }
   .main-nav {
-    width: 1010px;
+    width: 1049px;
+    -ms-align-self: flex-start;
+    -ms-flex-item-align: start;
+    align-self: flex-start;
   }
   .head__version {
-    margin-left: 30px;
+    margin-left: 80px;
   }
   .description {
     width: 1920px;
     background-size: cover;
+    padding-top: 339px;
   }
   .description__block {
     width: 1100px;
+    padding-top: 50px;
     padding-left: 150px;
+    position: relative;
+    bottom: -50px;
   }
   .parks__title-block {
     background-image: url(../img/parks.png);
-    background-position: 122px 0;
+    background-position: 38px 0;
     padding: 0;
   }
   .parks__title {
     width: 1620px;
   }
+  .parks__inner {
+    padding: 0;
+  }
   .parks__carousel {
     width: 1268px;
   }
+  .affiche__inner {
+    padding: 0;
+    -moz-flex-direction: row;
+    -ms-flex-direction: row;
+    -o-flex-direction: row;
+    flex-direction: row;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+  }
+  .affiche__news-item {
+    width: 25%;
+  }
+  .affiche__news-item:nth-child(4n) {
+    display: block;
+  }
   .partners__logo {
     width: 1290px;
+    padding-top: 35px;
   }
   .partners__inner {
-    padding: 0 47px;
+    padding: 0;
     -moz-flex-direction: row;
     -ms-flex-direction: row;
     -o-flex-direction: row;
@@ -1338,6 +1371,25 @@ th {
   }
   .contacts__doc-item {
     width: 50%;
+  }
+  .directors {
+    padding-top: 117px;
+  }
+  .directors__inner {
+    -moz-flex-direction: row;
+    -ms-flex-direction: row;
+    -o-flex-direction: row;
+    flex-direction: row;
+    padding: 0;
+  }
+  .directors__carousel {
+    margin-top: 49px;
+  }
+  .directors__carousel {
+    left: -35px;
+  }
+  .directors__block {
+    width: 1268px;
   }
 }
 @media (min-width: 1024px) and (min-width: 1920px) {

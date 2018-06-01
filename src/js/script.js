@@ -52,7 +52,7 @@ $('.responsive2').slick({
   speed: 300,
   responsive: [
     {
-      breakpoint: 1100,
+      breakpoint: 1920,
       settings: {
         slidesToShow: 3,
         slidesToScroll: 3,
