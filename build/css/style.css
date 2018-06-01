@@ -313,7 +313,6 @@ header .head__inner {
   display: flex;
 }
 .parks__carousel-item {
-  margin-right: 5px;
   width: 25%;
 }
 .parks__img {
@@ -352,21 +351,24 @@ header .head__inner {
 .affiche__date {
   text-transform: uppercase;
   font-size: 14px;
+  padding: 0 30px;
 }
 .affiche__date span {
-  font-size: 42px;
+  font-size: 33px;
   margin-right: 30px;
   font-family: 'IntroBlack';
 }
 .affiche__event {
-  font-size: 22px;
+  font-size: 18px;
   font-family: 'IntroBlack';
   margin-bottom: 0;
   width: 285px;
+  padding: 0 30px;
 }
 .affiche .affiche__date .item-separator:after {
   right: -16px;
   height: 23px;
+  top: 9px;
 }
 .affiche__carousel {
   width: 100%;
@@ -377,7 +379,6 @@ header .head__inner {
   display: flex;
 }
 .affiche__carousel-item {
-  margin-right: 5px;
   font-family: 'MuseoCyrillic300';
   width: 25%;
 }
@@ -412,7 +413,8 @@ header .head__inner {
 }
 .affiche__text {
   margin-top: 8px;
-  font-size: 17px;
+  font-size: 14px;
+  padding: 0 30px;
 }
 .affiche__block {
   width: 1268px;
@@ -438,6 +440,7 @@ header .head__inner {
   cursor: pointer;
   width: 100%;
   font-size: 18px;
+  width: 260px;
 }
 .partners,
 .contacts {
@@ -532,8 +535,14 @@ header .head__inner {
 .contacts__details-item {
   width: 100%;
 }
+.contacts__text {
+  font-size: 14px;
+}
+.contacts__details-text {
+  font-size: 14px;
+}
 .contacts__details-title {
-  font-size: 22px;
+  font-size: 18px;
   font-family: 'IntroBlack';
   text-transform: uppercase;
 }
@@ -588,6 +597,7 @@ header .head__inner {
 .contacts__doc-item a {
   color: #000;
   text-decoration: none;
+  font-size: 14px;
 }
 .contacts__doc-item:before {
   content: "";
@@ -603,10 +613,14 @@ header .head__inner {
 .contacts__details-item:last-child .contacts__details-title {
   margin-bottom: 0;
 }
+.contact__details-email span,
+.contact__details-phone span {
+  font-size: 14px;
+}
 .contact__details-email a,
 .contact__details-phone {
   text-decoration: none;
-  font-size: 22px;
+  font-size: 18px;
   font-family: 'IntroBlack';
   color: #000;
 }
@@ -697,8 +711,9 @@ footer {
 }
 .directors__option-text .item-separator:after {
   right: -16px;
-  height: 15px;
-  top: 4px;
+  height: 14px;
+  top: 3px;
+  width: 2px;
 }
 .directors__inner {
   -moz-flex-direction: column;
@@ -1012,6 +1027,9 @@ th {
   .head__version a {
     color: #00712f;
   }
+  .head__version {
+    padding: 0;
+  }
   .head__link {
     width: 280px;
     margin: 0;
@@ -1047,10 +1065,27 @@ th {
     padding: 0 47px;
   }
   .parks__block {
-    margin-top: 100px;
+    margin-top: 25px;
   }
   .parks__map {
     font-size: 22px;
+    padding-left: 0;
+    margin-bottom: 17px;
+  }
+  .parks__map:after {
+    top: -50px;
+    right: -138px;
+  }
+  .parks__carousel .slick-next {
+    top: 143px;
+    right: -33px;
+  }
+  .parks__carousel .slick-prev {
+    top: 144px;
+    left: -34px;
+  }
+  .parks__carousel-item {
+    margin-left: 5px;
   }
   .affiche__inner {
     padding: 0 47px;
@@ -1060,11 +1095,33 @@ th {
   .affiche__title {
     font-size: 37px;
   }
+  .affiche__date span {
+    font-size: 42px;
+  }
+  .affiche__event {
+    font-size: 22px;
+  }
+  .affiche__carousel .slick-next {
+    top: 143px;
+  }
+  .affiche__carousel .slick-prev {
+    top: 144px;
+  }
+  .affiche__carousel-item {
+    margin-left: 5px;
+  }
+  .affiche__img {
+    width: 302px;
+    height: 272px;
+  }
   .affiche__news {
     -moz-flex-direction: row;
     -ms-flex-direction: row;
     -o-flex-direction: row;
     flex-direction: row;
+  }
+  .affiche__text {
+    font-size: 17px;
   }
   .affiche__btn {
     width: 643px;
@@ -1106,6 +1163,13 @@ th {
   .contacts__text {
     width: 500px;
   }
+  .contacts__details-title {
+    font-size: 22px;
+  }
+  .contact__details-email a,
+  .contact__details-phone {
+    font-size: 22px;
+  }
   .footer__inner {
     padding: 0;
     -moz-flex-direction: row;
@@ -1128,6 +1192,7 @@ th {
   }
   .directors__title {
     font-size: 37px;
+    margin-bottom: 25px;
   }
   .directors__text {
     font-size: 22px;
@@ -1145,6 +1210,7 @@ th {
     flex-direction: row;
     -ms-flex-pack: justify;
     justify-content: space-between;
+    margin-top: 0;
   }
   .directors__option-text {
     width: 49%;
@@ -1160,6 +1226,10 @@ th {
     -ms-flex-wrap: wrap;
     -o-flex-wrap: wrap;
     flex-wrap: wrap;
+  }
+  .directors__carousel {
+    margin-top: 15px;
+    margin-bottom: 47px;
   }
 }
 @media (min-width: 1920px) {
@@ -1244,9 +1314,6 @@ th {
   .parks__block {
     -ms-flex-wrap: wrap;
     flex-wrap: wrap;
-  }
-  .affiche__event {
-    width: 100%;
   }
   .affiche__block {
     width: 100%;
