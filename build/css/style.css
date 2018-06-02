@@ -286,6 +286,8 @@ header .head__inner {
   display: flex;
   -ms-flex-pack: justify;
       justify-content: space-between;
+  -ms-flex-direction: column;
+      flex-direction: column;
 }
 .parks__map {
   display: inline-block;
