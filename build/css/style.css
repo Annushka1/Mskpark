@@ -423,7 +423,7 @@ header .head__inner {
   padding: 0 30px;
 }
 .affiche__block {
-  width: 1268px;
+  width: 100%;
   display: -moz-flex;
   display: -ms-flex;
   display: -o-flex;
@@ -454,7 +454,7 @@ header .head__inner {
 }
 .partners {
   padding-top: 13px;
-  width: 320px;
+  width: 100%;
   margin: 0 auto;
 }
 .partners__title {
@@ -494,13 +494,14 @@ header .head__inner {
   -ms-flex-direction: column;
   -o-flex-direction: column;
   flex-direction: column;
-  padding: 0 30px;
+  width: 260px;
 }
 .contacts {
   padding: 50px 0 45px 0;
   font-family: 'MuseoCyrillic300';
-  width: 320px;
+  width: 100%;
   margin: 0 auto;
+  margin-top: -2px;
 }
 .contacts__inner {
   display: -moz-flex;
@@ -512,7 +513,7 @@ header .head__inner {
   -ms-flex-direction: column;
   -o-flex-direction: column;
   flex-direction: column;
-  padding: 0 30px;
+  width: 260px;
 }
 .contacts__title {
   text-transform: uppercase;
@@ -1056,9 +1057,6 @@ th {
   .affiche__btn {
     width: 400px;
   }
-  .partners {
-    width: 768px;
-  }
   .partners__logo {
     -moz-flex-direction: row;
     -ms-flex-direction: row;
@@ -1073,9 +1071,6 @@ th {
   .partners__inner {
     padding: 0;
     width: 727px;
-  }
-  .contacts {
-    width: 768px;
   }
   .contacts__inner {
     width: 727px;
@@ -1137,6 +1132,7 @@ th {
   header .head__inner {
     margin: 0 auto;
     width: 100%;
+    max-width: 1430px;
     padding: 0 50px;
     -moz-flex-direction: row;
     -ms-flex-direction: row;
@@ -1208,7 +1204,8 @@ th {
   }
   .description {
     width: 100%;
-    padding-top: 425px;
+    max-width: 1430px;
+    padding-top: 595px;
     background-size: cover;
   }
   .description__title {
@@ -1219,12 +1216,12 @@ th {
     width: 100%;
   }
   .description__text {
-    width: 620px;
     margin-right: 29px;
     font-size: 22px;
   }
   .parks {
     width: 100%;
+    max-width: 1430px;
     padding: 0 50px;
   }
   .parks__title-block {
@@ -1236,11 +1233,12 @@ th {
     margin: 0 auto;
     font-size: 120px;
   }
-  .parks__inner {
-    padding: 0 47px;
-  }
   .parks__block {
     margin-top: 25px;
+    -moz-flex-direction: column;
+    -ms-flex-direction: column;
+    -o-flex-direction: column;
+    flex-direction: column;
   }
   .parks__map {
     font-size: 22px;
@@ -1259,13 +1257,14 @@ th {
     left: -34px;
   }
   .affiche {
+    width: 100%;
     margin-top: 50px;
     padding-bottom: 55px;
-    width: 100%;
-    padding: 0 50px;
   }
   .affiche__inner {
     padding: 0 47px;
+    width: 100%;
+    max-width: 1430px;
     -ms-flex-pack: justify;
     justify-content: space-between;
   }
@@ -1311,7 +1310,6 @@ th {
     font-size: 22px;
   }
   .partners {
-    width: 100%;
     padding: 7px 0 40px 0;
   }
   .partners__title {
@@ -1322,15 +1320,16 @@ th {
   }
   .partners__inner {
     width: 100%;
+    max-width: 1430px;
     padding: 0 50px;
   }
   .contacts {
-    width: 100%;
     padding-top: 0;
     padding-bottom: 40px;
   }
   .contacts__inner {
     width: 100%;
+    max-width: 1430px;
     padding: 0 50px;
   }
   .contacts__title {
@@ -1378,8 +1377,9 @@ th {
     font-size: 22px;
   }
   .footer__inner {
-    width: 924px;
-    padding: 0;
+    width: 100%;
+    max-width: 1430px;
+    padding: 0 47px;
     -moz-flex-direction: row;
     -ms-flex-direction: row;
     -o-flex-direction: row;
@@ -1407,11 +1407,9 @@ th {
   .directors__title {
     font-size: 37px;
     margin-bottom: 25px;
-    padding-left: 50px;
   }
   .directors__text {
     font-size: 22px;
-    padding: 0 50px;
   }
   .directors__text .bold-text {
     font-size: 22px;
@@ -1427,7 +1425,6 @@ th {
     -ms-flex-pack: justify;
     justify-content: space-between;
     margin-top: 0;
-    padding: 0 50px;
   }
   .directors__option-text {
     width: 49%;
@@ -1438,6 +1435,8 @@ th {
   }
   .directors__inner {
     padding: 0 47px;
+    width: 100%;
+    max-width: 1430px;
     -ms-flex-pack: justify;
     justify-content: space-between;
     -ms-flex-wrap: wrap;
@@ -1460,6 +1459,11 @@ th {
   div[class$=inner] {
     width: 1620px;
   }
+  header .head__inner {
+    padding: 0;
+    width: 1620px;
+    max-width: 1620px;
+  }
   .main-nav {
     width: 1049px;
     -ms-align-self: flex-start;
@@ -1474,6 +1478,8 @@ th {
     width: 1920px;
     background-size: cover;
     padding-top: 339px;
+    max-width: 1920px;
+    margin: 0 auto;
   }
   .description__block {
     width: 1100px;
@@ -1481,6 +1487,13 @@ th {
     padding-left: 150px;
     position: relative;
     bottom: -50px;
+  }
+  .parks {
+    width: 1620px;
+    max-width: 1620px;
+    padding: 0;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
   }
   .parks__title-block {
     background-image: url(../img/parks.png);
@@ -1493,11 +1506,26 @@ th {
   .parks__inner {
     padding: 0;
   }
+  .parks__block {
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    -moz-flex-direction: row;
+    -ms-flex-direction: row;
+    -o-flex-direction: row;
+    flex-direction: row;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+  }
   .parks__carousel {
     width: 1268px;
   }
+  .affiche {
+    width: 1620px;
+    padding: 0 0 45px 0;
+  }
   .affiche__inner {
     padding: 0;
+    max-width: 1620px;
     -moz-flex-direction: row;
     -ms-flex-direction: row;
     -o-flex-direction: row;
@@ -1506,16 +1534,23 @@ th {
     justify-content: space-between;
   }
   .affiche__news-item {
-    width: 25%;
+    width: 317px;
   }
   .affiche__news-item:nth-child(4n) {
     display: block;
+  }
+  .affiche__block {
+    width: 1286px;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
   }
   .partners__logo {
     width: 1290px;
     padding-top: 35px;
   }
   .partners__inner {
+    width: 1620px;
+    max-width: 1620px;
     padding: 0;
     -moz-flex-direction: row;
     -ms-flex-direction: row;
@@ -1525,6 +1560,8 @@ th {
     justify-content: space-between;
   }
   .contacts__inner {
+    width: 1620px;
+    max-width: 1620px;
     padding: 0;
     -moz-flex-direction: row;
     -ms-flex-direction: row;
@@ -1564,6 +1601,8 @@ th {
     -o-flex-direction: row;
     flex-direction: row;
     padding: 0;
+    width: 1620px;
+    max-width: 1620px;
   }
   .directors__carousel {
     margin-top: 49px;
@@ -1581,13 +1620,6 @@ th {
   }
 }
 @media (max-width: 1600px) {
-  .parks__block {
-    -ms-flex-wrap: wrap;
-    flex-wrap: wrap;
-  }
-  .affiche__block {
-    width: 100%;
-  }
   .contacts__doc {
     -moz-flex-direction: column;
     -ms-flex-direction: column;

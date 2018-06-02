@@ -89,14 +89,6 @@ div[class$=inner] {
   @media (min-width: 1920px) {
     width: 1620px;
   }  
-  // @media (max-width:1690px) {
-  //   width: 1020px;
-  //   -webkit-flex-wrap: wrap;
-  //   -moz-flex-wrap: wrap;
-  //   -ms-flex-wrap: wrap;
-  //   -o-flex-wrap: wrap;
-  //   flex-wrap: wrap;
-  // }
 }
 
 // header
@@ -129,6 +121,7 @@ header {
     @media (min-width: 1024px) {
       margin: 0 auto;
       width: 100%;
+      max-width: 1430px;
       padding: 0 50px;
       -webkit-flex-direction: row;
       -moz-flex-direction: row;
@@ -142,6 +135,11 @@ header {
     flex-wrap: wrap;
     // position: relative;
     justify-content: space-between;
+  }
+  @media (min-width: 1920px) {
+    padding: 0;
+    width: 1620px;
+    max-width: 1620px;
   }
   }
 }
@@ -419,8 +417,8 @@ header {
 
   @media (min-width: 1024px) {
     width: 100%;
-    padding-top: 425px;
-    -webkit-background-size: cover;
+    max-width: 1430px;
+    padding-top: 595px;
     background-size: cover;
   }
 
@@ -430,6 +428,9 @@ header {
     -webkit-background-size: cover;
     background-size: cover;
     padding-top: 339px;
+    max-width: 1920px;
+    margin: 0 auto;
+
   }
 
   &__title {
@@ -491,7 +492,7 @@ header {
       margin-bottom: 0;
     }
     @media (min-width: 1024px) {
-      width: 620px;
+      // width: 620px;
       margin-right: 29px;
       font-size: 22px;
     }
@@ -512,7 +513,15 @@ header {
   }
   @media (min-width: 1024px) {
     width: 100%;
+    max-width: 1430px;
     padding: 0 50px;
+  }
+
+  @media (min-width: 1920px) {
+    width: 1620px;
+    max-width: 1620px;
+    padding: 0;
+    justify-content: space-between;
   }
   &__title-block {
     background-image: url(../img/parks-xs.png);
@@ -557,7 +566,7 @@ header {
     flex-direction: column;
     padding: 6px 0 0 0;
     @media (min-width: 1024px) {
-      padding: 0 47px;
+      // padding: 0 47px;
     }
 
     @media (min-width: 1920px) {
@@ -575,10 +584,22 @@ header {
     justify-content: space-between;
     @media (min-width: 1024px) {
       margin-top: 25px;
+      -webkit-flex-direction: column;
+      -moz-flex-direction: column;
+      -ms-flex-direction: column;
+      -o-flex-direction: column;
+      flex-direction: column;
     }
 
-    @media (max-width: 1600px) {
+    @media (min-width: 1920px) {
       flex-wrap: wrap;
+      -webkit-flex-direction: row;
+      -moz-flex-direction: row;
+      -ms-flex-direction: row;
+      -o-flex-direction: row;
+      flex-direction: row;
+      // width: 1286px;
+      justify-content: space-between;
     }
   }
   &__map {
@@ -691,10 +712,15 @@ header {
     width: 768px;
   }
   @media (min-width: 1024px) {
+    width: 100%;
     margin-top: 50px;
     padding-bottom: 55px;
-    width: 100%;
-    padding: 0 50px;
+    
+  }
+
+  @media (min-width: 1920px) {
+    width: 1620px;
+    padding: 0 0 45px 0;
   }
 
   &__inner {
@@ -712,10 +738,13 @@ header {
 
     @media (min-width: 1024px) {
       padding: 0 47px;
+      width: 100%;
+      max-width: 1430px;
       justify-content: space-between;      
     }
     @media (min-width: 1920px) {
       padding: 0;
+      max-width: 1620px;
       -webkit-flex-direction: row;
       -moz-flex-direction: row;
       -ms-flex-direction: row;
@@ -896,7 +925,7 @@ header {
       &:nth-child(4n) {
         display: block;
       }
-      width: 25%;
+      width: 317px;;
     }
   }
 
@@ -922,7 +951,7 @@ header {
   }
 
   &__block {
-    width: 1268px;
+    width: 100%;
     display: -webkit-flex;
     display: -moz-flex;
     display: -ms-flex;
@@ -935,9 +964,11 @@ header {
     flex-direction: column;
     -ms-align-items: center;
     align-items: center;
-    @media (max-width: 1600px) {
-      width: 100%;
+    @media (min-width: 1920px) {
+      width: 1286px;
+      justify-content: space-between;
     }
+    
   }
 
   &__btn {
@@ -967,13 +998,14 @@ header {
 
 .partners {
   padding-top: 13px;
-  width: 320px;
+  width: 100%;
   margin: 0 auto;
+  // font-size: 0;
   @media (min-width: 768px) {
-    width: 768px;
+    // width: 768px;
   }
   @media (min-width: 1024px) {
-    width: 100%;
+    // width: 100%;
     padding: 7px 0 40px 0;
   }
   
@@ -1052,16 +1084,20 @@ header {
     -ms-flex-direction: column;
     -o-flex-direction: column;
     flex-direction: column;
-    padding: 0 30px;
+    width: 260px;
+
     @media (min-width: 768px) {
       padding: 0;
       width: 727px;
     }
     @media (min-width: 1024px) {
       width: 100%;
+      max-width: 1430px;
       padding: 0 50px;
     }
     @media (min-width: 1920px) {
+      width: 1620px;
+      max-width: 1620px;
       padding: 0;
       -webkit-flex-direction: row;
       -moz-flex-direction: row;
@@ -1076,14 +1112,15 @@ header {
 .contacts {
   padding: 50px 0 45px 0;
   font-family: 'MuseoCyrillic300';
-  width: 320px;
+  width: 100%;
   margin: 0 auto;
+  margin-top: -2px;
 
   @media (min-width: 768px) {
-    width: 768px;
+    // width: 100%;
   }
   @media (min-width: 1024px) {
-    width: 100%;
+    // width: 100%;
     padding-top: 0;
     padding-bottom: 40px;
   }
@@ -1099,7 +1136,7 @@ header {
     -ms-flex-direction: column;
     -o-flex-direction: column;
     flex-direction: column;
-    padding: 0 30px;
+    width: 260px;
     @media (min-width: 768px) {
       width: 727px;
       padding: 0;
@@ -1111,10 +1148,12 @@ header {
 
     @media (min-width: 1024px) {
       width: 100%;
+      max-width: 1430px;
       padding: 0 50px;
     }
     @media (min-width: 1920px) {
-
+      width: 1620px;
+      max-width: 1620px;
       padding: 0;
       -webkit-flex-direction: row;
       -moz-flex-direction: row;
@@ -1452,8 +1491,10 @@ footer {
   // }
 
   @media (min-width: 1024px) {
-    width: 924px;
-    padding: 0;
+    width: 100%;
+    max-width: 1430px;
+    padding: 0 47px;
+    // padding: 0;
     -webkit-flex-direction: row;
     -moz-flex-direction: row;
     -ms-flex-direction: row;
@@ -1522,7 +1563,7 @@ footer {
     @media (min-width: 1024px) {
       font-size: 37px;
       margin-bottom: 25px;
-      padding-left: 50px;
+      // padding-left: 50px;
     }
   }
 
@@ -1532,7 +1573,7 @@ footer {
     width: 100%;
     @media (min-width: 1024px) {
         font-size: 22px;
-        padding: 0 50px;
+        // padding: 0 50px;
       }
     .bold-text {
       font-family: 'IntroBlack';
@@ -1581,7 +1622,7 @@ footer {
       flex-direction: row;
       justify-content: space-between;
       margin-top: 0;
-      padding: 0 50px;
+      // padding: 0 50px;
     }
 
   }
@@ -1629,6 +1670,8 @@ footer {
     }
     @media (min-width: 1024px) {
       padding: 0 47px;
+      width: 100%;
+      max-width: 1430px;
       justify-content: space-between;
     -webkit-flex-wrap: wrap;
     -moz-flex-wrap: wrap;
@@ -1643,6 +1686,9 @@ footer {
       -o-flex-direction: row;
       flex-direction: row;
       padding: 0;
+      width: 1620px;
+      max-width: 1620px;
+      // padding: 0 150px;
     }
   }
 
