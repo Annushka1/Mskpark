@@ -96,7 +96,7 @@ div[class$=inner] {
 header {
   // @media (min-width: 1260px) {
     font-size: 22px;
-    padding: 30px 30px 24px 30px;
+    padding: 30px 30px 17px;
     width: 320px;
     margin: 0 auto;
     @media (min-width: 768px) {
@@ -296,7 +296,7 @@ header {
     content: "";
     display: inline-block;
     position: absolute;
-    width: 3px;
+    width: 2px;
     height: 17px;
     background-color: #569d60;
     right: -27px;
@@ -441,7 +441,7 @@ header {
   }
 
   &__title img {
-    width: 150px;
+    width: 155px;
   }
   &__block {
     display: -webkit-flex;
@@ -456,7 +456,7 @@ header {
     flex-direction: column;
     width: auto;
     background-color: #40a500;
-    padding: 38px 30px 31px 30px;
+    padding: 40px 30px 50px 30px;
     @media (min-width: 768px) {
       -webkit-flex-direction: row;
       -moz-flex-direction: row;
@@ -528,7 +528,7 @@ header {
     background-repeat: no-repeat;
     margin: 0 auto;
     position: relative;
-    padding: 90px 0 0 0;
+    padding: 103px 0 0;
     background-position: center top;
     @media (min-width: 1024px) {
       background-image: url(../img/parks-sm.png);
@@ -607,7 +607,7 @@ header {
     display: inline-block;
     font-size: 18px;
     width: 120px;
-    height: 83px;
+    height: 80px;
     font-family: 'IntroBlack';
     text-transform: uppercase;
     padding-left: 30px;
@@ -640,9 +640,13 @@ header {
 
 
   &__text {
-    font-size: 17px;
+    font-size: 14px;
     font-family: 'MuseoCyrillic100';
     text-align: center;
+    margin-top: 15px;
+    @media (min-width: 1024px) {
+      font-size: 17px;
+    }
   }
 
   &__carousel {
@@ -704,7 +708,8 @@ header {
 }
 
 .affiche {
-  padding-bottom: 70px;
+  padding-bottom: 23px;
+  padding-top: 17px;
   margin-top: 80px;
   width: 320px;
   margin: 0 auto;
@@ -764,6 +769,7 @@ header {
     font-family: 'IntroBlack';
     text-transform: uppercase;
     padding-left: 30px;
+    margin-bottom: 33px;
 
     @media (min-width: 768px) {
       padding-left: 0;
@@ -778,6 +784,8 @@ header {
     text-transform: uppercase;
     font-size: 14px;
     padding: 0 30px;
+    margin-top: 6px;
+    margin-bottom: 4px;
     @media (min-width: 768px) {
       padding: 0;
     }
@@ -800,6 +808,7 @@ header {
     margin-bottom: 0;
     width: 285px;
     padding: 0 30px;
+    margin-top: 0;
     @media (min-width: 768px) {
       padding: 0;
     }
@@ -832,6 +841,10 @@ header {
     display: -ms-flex;
     display: -o-flex;
     display: flex;
+
+    .slick-track {
+      height: 414px;
+    }
     @media (min-width: 1024px) {
       .slick-next {
         top: 143px;
@@ -874,7 +887,7 @@ header {
     display: -ms-flex;
     display: -o-flex;
     display: flex;
-    margin: 50px 0 50px;
+    margin: 0px 0 20px;
     width: 100%;
     -webkit-flex-direction: column;
     -moz-flex-direction: column;
@@ -909,7 +922,7 @@ header {
   &__news-item {
     // margin-left: 5px;
     font-family: 'MuseoCyrillic300';
-    
+    margin-bottom: 5px;
     @media (min-width: 768px) {
       width: 49%;
       &:nth-child(4n) {
@@ -974,7 +987,8 @@ header {
 
   &__btn {
     color: #40a500;
-    border: 3px solid #42a401;
+    border: 5px solid #42a401;
+    font-family: 'IntroBlack';
     text-transform: uppercase;
     padding: 15px 0;
     text-align: center;
@@ -998,7 +1012,7 @@ header {
 }
 
 .partners {
-  padding-top: 13px;
+  padding-top: 5px;
   width: 100%;
   margin: 0 auto;
   // font-size: 0;
@@ -1060,9 +1074,13 @@ header {
   &__logo-item {
     // padding-right: 100px;
     cursor: pointer;
-    margin-bottom: 0;
+    margin-bottom: 18px;
+    &:nth-child(2) {
+      margin-bottom: 33px;
+    }
 
     @media (min-width: 768px) {
+      margin-bottom: 0;
       img {
         max-width: 90%;
       }
@@ -1111,7 +1129,7 @@ header {
 }
 
 .contacts {
-  padding: 50px 0 45px 0;
+  padding: 3px 0 15px 0;
   font-family: 'MuseoCyrillic300';
   width: 100%;
   margin: 0 auto;
@@ -1169,6 +1187,7 @@ header {
     text-transform: uppercase;
     font-family: 'IntroBlack';
     font-size: 28px;
+    margin-bottom: 0;
     @media (min-width: 1024px) {
       font-size: 37px;
       margin-top: 15px;
@@ -1233,6 +1252,7 @@ header {
     -ms-flex-direction: column;
     -o-flex-direction: column;
     flex-direction: column;
+    margin-bottom: 19px;
 
     @media (min-width: 768px) {
       -webkit-flex-direction: row;
@@ -1321,19 +1341,41 @@ header {
       }
     }
 
+.contacts__text .item-separator:after {
+    height: 13px;
+    right: -15px;
+    top: 1px;
+    width: 2px;
+}
+
+.contacts__text:last-child .item-separator {
+  margin-right: 27px;
+}
+
+// .contacts__text:last-child .item-separator:after {
+//   width: 50px;
+// }
 
   &__details-text {
     font-size: 14px;
+    margin-top: 10px;
+    margin-bottom: 0;
+    line-height: 1.5;
     @media (min-width: 1024px) {
       margin-top: 0;
       margin-bottom: 9px;
     }
   }
+  // .timetable {
+  //   line-height: 1.5;
+  // }
 
   &__details-title {
     font-size: 18px;
     font-family: 'IntroBlack';
     text-transform: uppercase;
+    margin-top: 11px;
+    margin-bottom: 0;
     @media (min-width: 1024px) {
       font-size: 22px;
       margin-top: 11px;
@@ -1352,9 +1394,15 @@ header {
     -ms-flex-direction: column;
     -o-flex-direction: column;
     flex-direction: column;
+    margin-top: 13px;
+
     @media (min-width: 1920px) {
       width: 270px;
     }
+  }
+
+  .subs {
+    padding-top: 27px;
   }
 
   &__form-input {
@@ -1407,19 +1455,24 @@ header {
     flex-wrap: wrap;
     margin: 0;
     padding: 0;
-    margin-top: -10px;
-    @media (max-width: 1600px) {
-      -webkit-flex-direction: column;
-      -moz-flex-direction: column;
-      -ms-flex-direction: column;
-      -o-flex-direction: column;
-      flex-direction: column;
-      padding-bottom: 10px;
-    }
+    margin-top: -0px;
+    // @media (max-width: 1600px) {
+    //   -webkit-flex-direction: column;
+    //   -moz-flex-direction: column;
+    //   -ms-flex-direction: column;
+    //   -o-flex-direction: column;
+    //   flex-direction: column;
+    //   padding-bottom: 10px;
+    // }
+  }
+
+  .doc__block {
+    margin-top: 17px;
   }
 
   &__doc-item {
     // width: 100%;
+    height: 47px;
     a {
       color: #000;
       text-decoration: none;
@@ -1451,6 +1504,13 @@ header {
 //   margin-bottom: 0;
   
 // }
+.contact__details-phone {
+    margin-top: 4px;
+    display: inline-block;}
+.contact__details-email:last-child {
+  margin-top: 5px;
+  display: inline-block;
+}
 
 .contact__details-email span, .contact__details-phone span {
   font-size: 14px;
@@ -1477,7 +1537,7 @@ header {
 
 footer {
   background-color: #000;
-  padding: 28px 0 32px 0;
+  padding: 22px 0 19px 0;
 }
 
 .footer__inner {
@@ -1519,7 +1579,7 @@ footer {
 
 .footer__link {
   width: 100%;
-  margin-bottom: 20px;
+  margin-bottom: 15px;
   display: -webkit-flex;
   display: -moz-flex;
   display: -ms-flex;
@@ -1578,7 +1638,7 @@ footer {
       }
     .bold-text {
       font-family: 'IntroBlack';
-      font-size: 17px;
+      font-size: 18px;
       @media (min-width: 1024px) {
         font-size: 22px;
       }
@@ -1590,7 +1650,7 @@ footer {
     }
     .item-separator:after {
       position: relative;
-      right: -8px;
+      right: -12px;
       height: 15px;
       top: 1px;
     }
@@ -1613,7 +1673,7 @@ footer {
     -ms-flex-direction: column;
     -o-flex-direction: column;
     flex-direction: column;
-    margin-top: 29px;
+    margin-top: 65px;
 
     @media (min-width: 1024px) {
       -webkit-flex-direction: row;
@@ -1632,6 +1692,7 @@ footer {
     font-family: 'MuseoCyrillic300';
     font-size: 14px;
     width: 100%;
+    margin-bottom: 2px;
     @media (min-width: 1024px) {
       width: 49%;
       font-size: 17px;
@@ -1694,7 +1755,7 @@ footer {
   }
 
   &__carousel {
-    margin-top: 74px;
+    margin-top: 114px;
     margin-bottom: 40px;
     width: 100%;
     @media (min-width: 768px) {
@@ -1713,7 +1774,7 @@ footer {
     }
 
     .slick-prev.slick-arrow:before {
-      top: -76px;
+      top: -85px;
       left: 6px;
       @media (min-width: 1024px) {
         left: 32px;
@@ -1721,7 +1782,7 @@ footer {
     }
 
     .slick-next.slick-arrow:after {
-      top: -96px;
+      top: -105px;
       left: -13px;
       @media (min-width: 1024px) {
       left: -39px;
@@ -1743,17 +1804,23 @@ footer {
 
   &__name {
     font-family: 'IntroBlack';
-    font-size: 22px;
+    font-size: 18px;
     margin: 0 auto;
-    padding-top: 24px;
+    padding-top: 17px;
+    @media (min-width: 1024px) {
+      font-size: 22px;
+    }
   }
 
   &__position {
     font-family: 'MuseoCyrillic300';
-    font-size: 17px;
+    font-size: 14px;
     width: 210px;
     margin: 0 auto;
-    padding-top: 15px;
+    padding-top: 5px;
+    @media (min-width: 1024px) {
+      font-size: 17px;
+    }
   }
 
   &__block {
