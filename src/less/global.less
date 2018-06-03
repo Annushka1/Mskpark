@@ -87,7 +87,7 @@ div[class$=inner] {
     // padding: 0;
   }
   @media (min-width: 1920px) {
-    width: 1620px;
+    // width: 1620px;
   }  
 }
 
@@ -101,7 +101,7 @@ header {
     margin: 0 auto;
     @media (min-width: 768px) {
       width: 100%;
-      padding: 30px 0 24px 0;
+      // padding: 30px 0 24px 0;
     }
     @media (min-width: 1024px) {
       // padding: 30px 47px 15px 47px;
@@ -442,6 +442,9 @@ header {
 
   &__title img {
     width: 155px;
+    @media (min-width: 1024px) {
+      width: 201px;
+    }
   }
   &__block {
     display: -webkit-flex;
@@ -464,10 +467,10 @@ header {
       -o-flex-direction: row;
       flex-direction: row;
       justify-content: space-between;
-      padding: 30px 20px 31px 20px;
+      padding: 26px 20px 16px;
     }
     @media (min-width: 1024px) {
-      padding: 30px 47px 30px 47px;
+      padding: 19px 47px 16px 47px;
       width: 100%;
     }
 
@@ -475,6 +478,7 @@ header {
       width: 1100px;
       padding-top: 50px;
       padding-left: 150px;
+      padding-bottom: 74px;
       position: relative;
       bottom: -50px;  
     }
@@ -492,7 +496,7 @@ header {
       margin-bottom: 0;
     }
     @media (min-width: 1024px) {
-      // width: 620px;
+      margin-top: 15px;
       margin-right: 29px;
       font-size: 22px;
     }
@@ -514,30 +518,44 @@ header {
   @media (min-width: 1024px) {
     width: 100%;
     max-width: 1430px;
-    padding: 0 50px;
+    padding: 0;
   }
 
   @media (min-width: 1920px) {
-    width: 1620px;
-    max-width: 1620px;
+    width: 100%;
+    max-width: 100%;
     padding: 0;
     justify-content: space-between;
   }
   &__title-block {
     background-image: url(../img/parks-xs.png);
     background-repeat: no-repeat;
+    -webkit-background-size: auto;
+    background-size: auto;
     margin: 0 auto;
     position: relative;
     padding: 103px 0 0;
     background-position: center top;
+    @media (min-width: 768px) {
+      background-image: url(../img/parks-sm.png);
+      padding: 24px 20px;
+      width: 100%;
+      background-position: -177px;
+    }
     @media (min-width: 1024px) {
       background-image: url(../img/parks-sm.png);
-      padding: 5px 0px 0 0px;
+      padding: 5px 50px 0 50px;
+      width: 100%;
+      background-position: -3px;
+      max-width: 1430px;
     }
     @media (min-width: 1920px) {
       background-image: url(../img/parks.png);
-      background-position: 38px 0;
+      // background-position: 38px 0;
       padding: 0;
+      width: 1920px;
+      max-width: 1920px;
+      background-position: -14px 0;
     }
   }
   
@@ -548,14 +566,18 @@ header {
     // margin-left: 121px;
     font-family: 'IntroBlack';
     text-transform: uppercase;
+    @media (min-width: 768px) {
+      text-align: left;
+    }
     @media (min-width: 1024px) {
       text-align: left;
       // width: 924px;
       margin: 0 auto;
       font-size: 120px;
+      
     }
     @media (min-width: 1920px) {
-      width: 1620px;
+      width: 1718px;
     }
   }
   &__inner {
@@ -565,12 +587,21 @@ header {
     -o-flex-direction: column;
     flex-direction: column;
     padding: 6px 0 0 0;
+    @media (min-width: 768px) {
+      width: 727px;
+    }
     @media (min-width: 1024px) {
       // padding: 0 47px;
+      width: 100%;
+      padding: 0 50px;
+      max-width: 1430px;
+
     }
 
     @media (min-width: 1920px) {
       padding: 0;
+      width: 1695px;
+      max-width: 1695px
 
     }
   }
@@ -600,6 +631,7 @@ header {
       -o-flex-direction: row;
       flex-direction: row;
       // width: 1286px;
+      padding: 0 46px 0 0px;
       justify-content: space-between;
     }
   }
@@ -613,6 +645,7 @@ header {
     padding-left: 30px;
     @media (min-width: 768px) {
       padding-left: 0;
+      height: 93px;
     }
     @media (min-width: 1024px) {
      font-size: 22px; 
@@ -656,8 +689,14 @@ header {
     display: -ms-flex;
     display: -o-flex;
     display: flex;
+    @media (min-width: 1024px) {
+          width: 100%;
+    margin: 0 auto;
+    max-width: 1430px;
+    }
     @media (min-width: 1920px) {
-      width: 1268px;
+      width: 1280px;
+      margin: 0;
     }
     .slick-next {
       // left: -44px;
@@ -670,13 +709,13 @@ header {
     @media (min-width: 1024px) {
       .slick-next {
         // left: 0;
-        top: 143px;
+        top: 155px;
         right: -33px;
       }
 
       .slick-prev {
         // left: 0;
-        top: 144px;
+        top: 150px;
         left: -34px;
       }
     }
@@ -696,6 +735,10 @@ header {
 
   &__img {
     width: 100%;
+    @media (min-width: 1024px) {
+      // height: 270px;
+      // width: 305px;
+    }
   }
 
   &__carousel-item:last-child {
@@ -716,17 +759,19 @@ header {
 
   @media (min-width: 768px) {
     width: 768px;
+    padding-top: 44px;
+    padding-bottom: 60px;
   }
   @media (min-width: 1024px) {
     width: 100%;
-    margin-top: 50px;
-    padding-bottom: 55px;
+    margin-top: 12px;;
+    padding-bottom: 58px;
     
   }
 
   @media (min-width: 1920px) {
-    width: 1620px;
-    padding: 0 0 45px 0;
+    width: 1695px;
+    padding: 57px 0 70px;
   }
 
   &__inner {
@@ -741,6 +786,10 @@ header {
     -o-flex-direction: column;
     flex-direction: column;
     // padding: 0 30px;
+    @media (min-width: 768px) {
+      width: 727px;
+      padding: 15px 0 0;
+    }
 
     @media (min-width: 1024px) {
       padding: 0 47px;
@@ -750,7 +799,8 @@ header {
     }
     @media (min-width: 1920px) {
       padding: 0;
-      max-width: 1620px;
+      max-width: 1695px;
+      padding-right: 45px;
       -webkit-flex-direction: row;
       -moz-flex-direction: row;
       -ms-flex-direction: row;
@@ -811,6 +861,7 @@ header {
     margin-top: 0;
     @media (min-width: 768px) {
       padding: 0;
+      width: 100%;
     }
     @media (min-width: 1024px) {
       // padding: 0;
@@ -829,6 +880,7 @@ header {
     right: -16px;
     height: 23px;
     top: 9px;
+    width: 2.5px;
     @media (min-width: 1024px) {
       top: 17px;
     }
@@ -841,11 +893,18 @@ header {
     display: -ms-flex;
     display: -o-flex;
     display: flex;
+    @media (min-width: 768px) {
+      height: 390px;
+    }
+    @media (min-width: 1024px) {
+      height: 474px;
+    }
 
     .slick-track {
       height: 414px;
     }
     @media (min-width: 1024px) {
+
       .slick-next {
         top: 143px;
         right: -33px;
@@ -872,8 +931,8 @@ header {
   &__img {
     width: 100%;
     @media (min-width: 1024px) {
-      // width: 302px;
-      // height: 272px;
+      // height: 270px;
+      // width: 305px;
     }
   }
 
@@ -907,7 +966,7 @@ header {
       flex-wrap: wrap;
       margin: 0 auto;
       justify-content: space-between;
-      padding-bottom: 25px;
+      padding-bottom: 21px;;
     }
     @media (min-width: 1024px) {
       -webkit-flex-direction: row;
@@ -915,7 +974,10 @@ header {
       -ms-flex-direction: row;
       -o-flex-direction: row;
       flex-direction: row;
-      margin-bottom: 23px;
+      // margin-bottom: 23px;
+    }
+    @media (min-width: 1920px) {
+      padding-bottom: 39px;
     }
   }
 
@@ -924,9 +986,9 @@ header {
     font-family: 'MuseoCyrillic300';
     margin-bottom: 5px;
     @media (min-width: 768px) {
-      width: 49%;
+      width: 33%;
       &:nth-child(4n) {
-      display: block;;
+      display: none;;
     }
     }
     @media (min-width: 1024px) {
@@ -998,6 +1060,7 @@ header {
     width: 260px;
     @media (min-width: 768px) {
       width: 400px;
+      // font-size: 22px;
     }
     @media (min-width: 1024px) {
       width: 643px;
@@ -1017,11 +1080,14 @@ header {
   margin: 0 auto;
   // font-size: 0;
   @media (min-width: 768px) {
-    // width: 768px;
+    padding-top: 14px;
   }
   @media (min-width: 1024px) {
     // width: 100%;
     padding: 7px 0 40px 0;
+  }
+  @media (min-width: 1920px) {
+    padding-top: 32px;
   }
   
 
@@ -1057,6 +1123,7 @@ header {
       -o-flex-direction: row;
       flex-direction: row;
       justify-content: space-between;
+      padding-top: 8px;
     }
     @media (min-width: 1024px) {
       width: 100%;      
@@ -1065,6 +1132,7 @@ header {
     @media (min-width: 1920px) {
       width: 1290px;
       padding-top: 35px;
+      justify-content: flex-start;
     }
     // @media (max-width: 1600px) {
     //   width: 100%;
@@ -1090,6 +1158,9 @@ header {
     }
     img {
       max-width: 100%}
+      @media (min-width: 1920px) {
+        margin-right: 57px;
+      }
   }
 
   &__inner {
@@ -1136,12 +1207,18 @@ header {
   margin-top: -2px;
 
   @media (min-width: 768px) {
+    padding: 15px 0 40px;
     // width: 100%;
   }
   @media (min-width: 1024px) {
     // width: 100%;
     padding-top: 0;
     padding-bottom: 40px;
+  }
+
+  @media (min-width: 1920px) {
+    padding-top: 15px;
+    padding-bottom: 48px;
   }
 
   &__inner {
@@ -1188,6 +1265,9 @@ header {
     font-family: 'IntroBlack';
     font-size: 28px;
     margin-bottom: 0;
+    @media (min-width: 768px) {
+      margin-bottom: 26px;
+    }
     @media (min-width: 1024px) {
       font-size: 37px;
       margin-top: 15px;
@@ -1284,26 +1364,10 @@ header {
       -o-flex-direction: column;
       flex-direction: column;
       width: 50%;
+      &:last-child {
+        margin-top: 0px;
+      }
     }
-    
-    // @media (max-width: 1600px) {
-    //   -webkit-flex-direction: column;
-    //   -moz-flex-direction: column;
-    //   -ms-flex-direction: column;
-    //   -o-flex-direction: column;
-    //   flex-direction: column;
-    //   width: 50%;
-
-    //   &:last-child {
-    //     width: 30%;
-    //   }
-
-    //   &:first-child {
-    //     .contact__text:last-child {
-    //       margin-top: 50px;
-    //     }
-    //   }
-    // }
   }
 
   &__details-item {
@@ -1326,6 +1390,7 @@ header {
       @media (min-width: 1920px) {
         &:last-child {
           width: 100%;
+          margin-top: 35px;
         }
       }
     }
@@ -1345,10 +1410,10 @@ header {
     height: 13px;
     right: -15px;
     top: 1px;
-    width: 2px;
+    width: 2.4px;
 }
 
-.contacts__text:last-child .item-separator {
+.contacts__text .item-separator {
   margin-right: 27px;
 }
 
@@ -1403,6 +1468,9 @@ header {
 
   .subs {
     padding-top: 27px;
+    @media (min-width: 768px) {
+      padding-top: 0;
+    }
   }
 
   &__form-input {
@@ -1468,6 +1536,9 @@ header {
 
   .doc__block {
     margin-top: 17px;
+    @media (min-width: 768px) {
+      margin-top: 0;
+    }
   }
 
   &__doc-item {
@@ -1563,6 +1634,11 @@ footer {
     flex-direction: row;
     justify-content: space-between;
   }
+  @media (min-width: 1920px) {
+    width: 1620px;
+    max-width: 1620px;
+    padding: 0;
+  }
 }
 .copyright {
   text-transform: uppercase;
@@ -1605,6 +1681,7 @@ footer {
     margin: 0 auto;
   @media (min-width: 768px) {
     width: 768px;
+    padding-top: 27px;
   }
   @media (min-width: 1024px) {
     width: 100%;
@@ -1621,6 +1698,9 @@ footer {
     text-transform: uppercase;
     font-size: 28px;
     margin: 13px 0 3px 0;
+    @media (min-width: 768px) {
+      padding: 5px 0 0;
+    }
     @media (min-width: 1024px) {
       font-size: 37px;
       margin-bottom: 25px;
@@ -1632,6 +1712,9 @@ footer {
     font-family: 'MuseoCyrillic300';
     font-size: 18px;
     width: 100%;
+    @media (min-width: 768px) {
+      margin-top: 35px;
+    }
     @media (min-width: 1024px) {
         font-size: 22px;
         // padding: 0 50px;
@@ -1653,12 +1736,14 @@ footer {
       right: -12px;
       height: 15px;
       top: 1px;
+      width: 2.5px;
     }
   }
   .directors__text:first-child .item-separator:after {
       // top: 24px;
       @media (min-width: 1024px) {
-        top: 5px;
+        top: 0;
+        right: -15px;
       }
     }
 
@@ -1674,6 +1759,9 @@ footer {
     -o-flex-direction: column;
     flex-direction: column;
     margin-top: 65px;
+    @media (min-width: 768px) {
+      margin-top: 22px;
+    }
 
     @media (min-width: 1024px) {
       -webkit-flex-direction: row;
@@ -1696,6 +1784,7 @@ footer {
     @media (min-width: 1024px) {
       width: 49%;
       font-size: 17px;
+      margin-top: 5px;
     }
     @media (min-width: 1920px) {
 
@@ -1715,8 +1804,16 @@ footer {
     .item-separator:after {
       right: -16px;
       height: 14px;
-      top: 3px;
-      width: 2px;
+      top: 4px;
+      width: 2.5px;
+      @media (min-width: 768px) {
+        width: 2px;
+      }
+      @media (min-width: 1024px) {
+        top: 6px;
+        right: -18px;
+        width: 2.5px;
+      }
     }
   }
 
@@ -1759,12 +1856,12 @@ footer {
     margin-bottom: 40px;
     width: 100%;
     @media (min-width: 768px) {
-      margin-top: 22px;
+      margin-top: 28px;
     }
     @media (min-width: 1024px) {
       margin-top: 15px;
       margin-bottom: 47px;
-      padding: 0 50px;
+      padding: 13px 50px 0;
     }
     @media (min-width: 1920px) {
       margin-top: 49px;
