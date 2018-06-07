@@ -1725,6 +1725,11 @@ header {
     -ms-flex-wrap: wrap;
     -o-flex-wrap: wrap;
     flex-wrap: wrap;
+    -webkit-flex-direction: column;
+    -moz-flex-direction: column;
+    -ms-flex-direction: column;
+    -o-flex-direction: column;
+    flex-direction: column;
     margin: 0;
     padding: 0;
     margin-top: -0px;
@@ -1756,21 +1761,30 @@ header {
   }
 
   &__doc-item {
-    font-family: 'MuseoCyrillic100';
-    height: 46px;
+    font-family: MuseoCyrillic100;
+    min-height: 50px;
+    width: auto;
+    position: relative;
+    left: 49px;
     a {
       color: #000;
       text-decoration: none;
       font-size: 14px;
+      width: 97%;
+      padding-right: 25px;
+      padding-bottom: 10px;
+      display: inline-block;
 
       @media (min-width: 768px) {
         font-size: 17px;
+        width: 87%; 
       }
 
       @media (min-width: 1224px) {
         font-size: 17px;
       }
     }
+   
     @media (min-width: 1224px) {
       width: 50%;
     }
@@ -1782,10 +1796,11 @@ header {
     height: 50px;
     display: inline-block;
     background-image: url(../img/PDF.svg);
-    position: relative;
-    top: 25px;
-    left: 0;
+    position: absolute;
+    top: 0;
+    left: -44px;
     background-repeat: no-repeat;
+    bottom: 0;
   }
 }
 
@@ -1823,7 +1838,7 @@ header {
 
 .doc__block {
   .contacts__details-title {
-    margin-bottom: 0;
+    margin-bottom: 25px;;
   }
 }
 
@@ -2269,6 +2284,7 @@ footer {
 
 textarea, 
 input[type="text"], 
+input[type="email"], 
 input[type="button"], 
 input[type="submit"] { 
 -webkit-appearance: none; 

@@ -668,6 +668,10 @@ header .head__inner {
   -ms-flex-wrap: wrap;
   -o-flex-wrap: wrap;
   flex-wrap: wrap;
+  -moz-flex-direction: column;
+  -ms-flex-direction: column;
+  -o-flex-direction: column;
+  flex-direction: column;
   margin: 0;
   padding: 0;
   margin-top: 0px;
@@ -676,13 +680,20 @@ header .head__inner {
   margin-top: 8px;
 }
 .contacts__doc-item {
-  font-family: 'MuseoCyrillic100';
-  height: 46px;
+  font-family: MuseoCyrillic100;
+  min-height: 50px;
+  width: auto;
+  position: relative;
+  left: 49px;
 }
 .contacts__doc-item a {
   color: #000;
   text-decoration: none;
   font-size: 14px;
+  width: 97%;
+  padding-right: 25px;
+  padding-bottom: 10px;
+  display: inline-block;
 }
 .contacts__doc-item:before {
   content: "";
@@ -690,10 +701,11 @@ header .head__inner {
   height: 50px;
   display: inline-block;
   background-image: url(../img/PDF.svg);
-  position: relative;
-  top: 25px;
-  left: 0;
+  position: absolute;
+  top: 0;
+  left: -44px;
   background-repeat: no-repeat;
+  bottom: 0;
 }
 .contact__details-phone {
   margin-top: 7px;
@@ -716,7 +728,7 @@ header .head__inner {
   color: #000;
 }
 .doc__block .contacts__details-title {
-  margin-bottom: 0;
+  margin-bottom: 25px;
 }
 footer {
   background-color: #000;
@@ -896,6 +908,7 @@ footer {
 }
 textarea,
 input[type="text"],
+input[type="email"],
 input[type="button"],
 input[type="submit"] {
   -webkit-appearance: none;
@@ -1566,6 +1579,7 @@ th {
   }
   .contacts__doc-item a {
     font-size: 17px;
+    width: 87%;
   }
   .contact__details-email {
     margin-top: 7px;
